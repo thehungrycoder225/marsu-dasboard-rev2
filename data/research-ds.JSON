@@ -1,0 +1,398 @@
+[
+  {
+    "faculty": [
+      {
+        "title": "Will Economic Capability & Technonological Availability Affect Graduate Competencies",
+        "authors": ["Maria Ness M. Solomon", "Ivy Joy N. Aguiflor"],
+        "conference": "International Conference on Assessment in the New Normal (ICANN)",
+        "category": "International",
+        "year": "Virtual. May 25 – 27, 2022."
+      },
+      {
+        "title": "Carps? Ready to Face it? The Information Systems Students’ Readiness for F2F Classes",
+        "authors": [
+          "Beneden M. Logmao",
+          "Arben O. Ornedo",
+          "Ivy Joy N. Aguiflor"
+        ],
+        "conference": "International Conference on Assessment in the New Normal (ICANN)",
+        "category": "International",
+        "year": "Virtual. May 25 – 27, 2022."
+      },
+      {
+        "title": "Utilizing Surveillance, Trust and Democracy as an Online Pedagogy Amidst Pandemic 2021",
+        "authors": ["Lorimer L. Imperio"],
+        "conference": "18th International Conference on Technology, Knowledge & Society",
+        "category": "International",
+        "year": "National Changhua City Taiwan via Zoom"
+      },
+      {
+        "title": "Geospatial Analysis of SICS Students Readiness for Online Learning. ",
+        "authors": [
+          "Ronjie Mar L. Malinao",
+          "Julieta Q. Nabos",
+          "Christine May L. Nabos",
+          "Jayvi M. Mandalihan"
+        ],
+        "conference": "2020 IEEE 12th International Conference on Humanoid, Nanotechnology, Information Technology, Communication and Control, Environment, and Management (HNICEM).",
+        "category": "International",
+        "year": "Virtual. December 28-29, 2020"
+      },
+      {
+        "title": "Classifying Artocarpus Trees using Unmanned Aerial Vehicle and Artificial Neural Network",
+        "authors": ["Ronjie Mar L. Malinao"],
+        "conference": "10th International Conference on Humanoid, Nanotechnology, Information Technology, Communication and Control Environment and Management",
+        "year": "November 29 – December 2, 2018",
+        "category": "International"
+      },
+      {
+        "title": "Weissman Score of Lossless Compression Algorithms",
+        "authors": ["Ronjie Mar L. Malinao", "Eunice G. de Luna"],
+        "conference": "5th International Conference on Social Science and Management, Research Park, Choduji Minami-machi, Shimogyo-ku, Kyoto, Japan",
+        "year": "May 9-11, 2017",
+        "category": "International"
+      },
+      {
+        "title": "i-Grade: A Mobile Transmutation Table",
+        "authors": ["Ronjie Mar L. Malinao", "Eunice G. De Luna"],
+        "conference": "International Conference on Teaching & Learning",
+        "location": "Bangkok, Thailand",
+        "year": "November 2013",
+        "category": "International"
+      },
+      {
+        "title": "Potentials of using Unmanned Aerial Vehicle in the Philippine Farming Sector: Empirical evidence from field survey",
+        "authors": ["Ronjie Mar Malinao", "Alexander Hernandez"],
+        "conference": "St. Paul University, Tuguegarao City, Cagayan Valley",
+        "year": "October 25-27, 2018",
+        "category": "National"
+      },
+      {
+        "title": "Digitalization of Msme’s Business Processes Through Development and Implementation of Sales and Inventory Management System (Sims) Based On Production Monitoring",
+        "authors": [
+          "Julieta Q. Nabos",
+          "Art Jervin L. Magcamit",
+          "Christine May L. Nabos",
+          "Doreena Joy Borja"
+        ],
+        "conference": "8th Regional Science and Technology Conference",
+        "location": "Marinduque State College, Tanza, Boac, Marinduque",
+        "year": "December 19, 2022",
+        "category": "Regional"
+      },
+      {
+        "title": "Future Energy: Analysis of Weather Data to Forecast Photovoltaic Solar Energy Harvest",
+        "authors": ["Eunice G. De Luna-Malinao", "Ronjie Mar Malinao"],
+        "conference": "8th Regional Science and Technology Conference",
+        "location": "Marinduque State College, Tanza, Boac, Marinduque",
+        "year": "December 19, 2022",
+        "category": "Regional"
+      },
+      {
+        "title": "QR Code Security: A Bitplane Attack Resistant Multi-Image Stenography",
+        "authors": ["Eunice G. De Luna-Malinao", "Ronjie Mar Malinao"],
+        "conference": "8th Regional Science and Technology Conference",
+        "location": "Marinduque State College, Tanza, Boac, Marinduque",
+        "year": "December 19, 2022",
+        "category": "Regional"
+      },
+      {
+        "title": "AI in Higher Education: Unveiling Faculty Perspective Towards AI through UTAUT Approach",
+        "authors": ["Ryan Clifford L. Perez"],
+        "conference": "8th Regional Science and Technology Conference",
+        "location": "Marindque, State College, Tanza, Boac, Marinduque",
+        "year": "December 19, 2022",
+        "category": "Regional"
+      },
+      {
+        "title": "Examination question classification based on revised Bloom’s Taxonomy using Naïve Bayes classifier",
+        "authors": ["Kierven A. Villaruel"],
+        "conference": "8th Regional Science and Technology Conference",
+        "location": "Marinduque State College, Tanza, Boac, Marinduque",
+        "year": "December 19, 2022",
+        "category": "Regional"
+      },
+      {
+        "title": "Hanap-Bahay App: “A Rental-House Management Application”",
+        "authors": ["Kierven A. Villaruel"],
+        "conference": "7th Regional Science and Technology Conference",
+        "location": "Marinduque State College, Tanza, Boac, Marinduque",
+        "year": "December 15, 2021",
+        "category": "Regional"
+      },
+      {
+        "title": "Perception of E-Wallets as the Mode of Payment for Online Enrolment in MSC",
+        "authors": ["Ryan Clifford L. Perez"],
+        "conference": "7th Regional Science and Technology Conference",
+        "location": "Marinduque State College, Tanza, Boac, Marinduque",
+        "year": "December 15, 2021",
+        "category": "Regional"
+      },
+      {
+        "title": "Ant Colony Optimization (ACO) for Short Route Calculation Implemented to Transport Mobile Application for Small Network Transport Services in Marinduque",
+        "authors": ["Jeffrey M. Marapia"],
+        "conference": "7th Regional Science and Technology Conference",
+        "location": "Marinduque State College, Tanza, Boac, Marinduque",
+        "year": "December 15, 2021",
+        "category": "Regional"
+      },
+      {
+        "title": "Parental Engagement on Edukasyong Pantahanan at Pangkabuhayan: ICT Skills and Availability of ICT Equipment in Children’s Learning Amidst Pandemic",
+        "authors": ["Beneden Logmao", "Christine May L. Nabos", "Arben Ornedo"],
+        "conference": "6th Regional Science and Technology Conference",
+        "location": "Marinduque State College",
+        "year": "June 29, 2021",
+        "category": "Regional"
+      },
+      {
+        "title": "TraceTech: A Graduate Tracer Study of BS Information Technology & BS Information System from 2012 to 2018",
+        "authors": [
+          "Ronjie Mar L. Malinao",
+          "Maria Nessa M. Solomon",
+          "Art Jervin L. Magcamit",
+          "Julieta Nabos"
+        ],
+        "conference": "4th Regional Science and Technology Conference",
+        "location": "Virtual",
+        "year": "Marinduque State College, Tanza, Boac, Marinduque",
+        "year": "November 2020",
+        "category": "Regional"
+      },
+      {
+        "title": "Analysis about the Difficulty Level of the Different Information Technology Tools as utilized by the selected student at the School of Information and Computing Sciences",
+        "authors": ["Lorimer L. Imperio"],
+        "conference": "4th Regional Science and Technology Conference",
+        "location": "SAED Audio-Visual Room, Tanza, Boac, Marinduque",
+        "year": "November 11, 2020",
+        "category": "Regional"
+      },
+      {
+        "title": "Evaluation of Neural Network Activation Functions for Educational Dataset",
+        "authors": ["Ronjie Mar L. Malinao"],
+        "conference": "2nd Science and Technology Conference",
+        "location": "Marinduque State College Audio Visual Room, Tanza, Boac, Marinduque",
+        "year": "June 22, 2019",
+        "category": "Regional"
+      },
+      {
+        "title": "Association Rule Mining using Apriori Algorithm in Road Accident Causation Analysis",
+        "authors": ["Ryan Clifford L. Perez"],
+        "conference": "3rd Science and Technology Conference",
+        "location": "Balar Events Place, Balaring, Boac, Marinduque",
+        "year": "December 12, 2019",
+        "category": "Regional"
+      },
+      {
+        "title": "Potentials of using Drone in the Marinduque Farming Sector: Empirical evidence from field survey",
+        "authors": ["Ronjie Mar Malinao", "Alexander A. Hernandez"],
+        "conference": "1st Regional Science and Technology Conference",
+        "location": "Marinduque State College, Tanza, Boac, Marinduque",
+        "year": "September 19-21, 2018",
+        "category": "Regional"
+      },
+      {
+        "title": "Web-Based Procurement Management System of Marinduque State College-Supply Office",
+        "authors": [
+          "Reynaldo M. Lingon, Jr.",
+          "Art Jervin L. Magcamit",
+          "Maria Nessa M. Solomon"
+        ],
+        "conference": "MSC Audio-Visual Room, Marinduque State College, Tanza, Boac, Marinduque",
+        "year": "December 14-15, 2017",
+        "category": "Regional"
+      },
+      {
+        "title": "E-Vote: Electronic Voting System for Marinduque State College",
+        "authors": ["Ronjie Mar L. Malinao", "Eunice G. De Luna"],
+        "conference": "5th STIRDC Regional and Extension Conference",
+        "location": "Romblon State University, Odiongan, Romblon",
+        "year": "October 29-30, 2015",
+        "category": "Regional"
+      }
+    ],
+    "student": [
+      {
+        "title": "Development Web-Based Loan Management System for Mogpog Multi-Purpose Cooperative",
+        "authors": [
+          "Jerome L. Alca",
+          "John Cris E. Ortiz",
+          "Judith G. Montero",
+          "Riza G. Lacdao"
+        ],
+        "year": "2022",
+        "abstract": "The web application concept has been variously applied in most computing fields. It involves utilizing a global network or computing device to undertake the tasks people are handling. However, loan transactions through a manual system are prone to errors and unimagined complexities, making it challenging to maintain all entries of user accounts, search records of activities, handle loan deduction errors and generate reports. Using this Web-based Loan Management System, users can access and apply for a loan anywhere. It also monitors the member's credit score, and the Board of Directors can approve loans online. This Web-Based Loan Management System records various kinds of loans, their members, and the payments. It is designed and developed according to the requirement of the Mogpog Multi-Purpose Cooperative. A prototyping method was used in developing the process. PHP is chosen as the primary programming language. This implementation of the system will lead to a reliable, fast user appealing solution to meet the requirements of the MMPC. After the system developed, the developers conducted series of testing, performance testing was conducted to evaluate the system performance, Functionality testing, Compatibility testing, User Acceptance testing and Software Evaluation was also conducted."
+      },
+
+      {
+        "title": "Development of Online Furniture Store",
+        "authors": [
+          "Winston Rey L. Mangol",
+          "Danica J. Gamara",
+          "Jobelle V. Dominguez",
+          "Michelle S. Malore"
+        ],
+        "year": "2022",
+        "abstract": "Online Furniture Store is an online shopping website for furniture shops that automate business transactions and establish more organized business processes, especially updating, monitoring, and storing important information involved in the organization. Together, the system was developed to facilitate improvement in the organization's services catered in their physical store through extending services into the online world, where the system provides a better platform not only to render and promote the organization's services but also bring customers ease of access in the organization services in the form of a website, considering its ability to provide access anytime and anywhere. The system was classified as a generic system that can be applied to other businesses with the same type of pilot organization. Prototyping methodology was used to develop the system, allowing users' suggestions in every finished prototype, which guaranteed user satisfaction with the system. In terms of the system's design, several tools were utilized, such as Hypertext Markup Language, Sublime, and PHP, to name a few. The system underwent different testing procedures, which qualified the system's functionality and capability based on ISO 9126 Quality Standards."
+      },
+
+      {
+        "title": "Development of Network Infrastructure Plan and Design for Centralizing File Sharing of Ilaya National High School",
+        "authors": [
+          "Jerold R. Roldan",
+          "Arjay M. Malitao",
+          "Ma. Fernanda Poquiz",
+          "Carmela R. Balane"
+        ],
+        "year": "2022",
+        "abstract": "This capstone project aims to upgrade the existing network connection of Ilaya National High School. Further, improve the file sharing and security of shared resources. Also, boost and integrate network connection and file sharing. As well as, test the effectiveness of centralizing file sharing and examined the primary function of the file server. Lastly, check the flexibility and adaptability of the proposed project, and also create a network design suitable for the organization. The intended beneficiaries were identified, and their requirements were analyzed to determine the best technology needed to support their needs. As a result, the design of an appropriate and scalable for Ilaya National High School Providing a Local Area Network (LAN) and hybrid topology has been implemented. Some essential concepts like DHCP and Static IP Addressing on every personal computer (PC) unit using Cisco Design and Simulation of Local Area Network Using Cisco Packet Tracer was also use to complete it. And with the aid of a router, switch configurations, and fiber optic, data packets are routed from one device to another. The ping test and subnetting were important to enables more efficient use of IP addresses than classful default, separates networks for security, enables bandwidth control, and the subnet mask is the cornerstone of subnetting. This paper proposed with careful consideration of the cost model. suitability of the technology in the area, ownership options, and organizational structure appropriate for developing a sustainable network connection and file sharing in this school."
+      },
+
+      {
+        "title": "Improvement of Wireless Local Area Network (WLAN) for Centralized File-Sharing In PSA-Marinduque",
+        "authors": [
+          "Jonna Mae M. Malacas",
+          "Kleovillie M. Matre",
+          "Maria Abegail M. Samuya",
+          "Ma. Teresa P. Matre"
+        ],
+        "year": "2022",
+        "abstract": "This paper presents the importance of implementing a Wireless Local Area Network (WLAN) for centralized file-sharing. In PSA - Marinduque, employees transfer files via flash drive and use other online platforms to read, send and download files that may be the cause widespread of malicious viruses that may affect the data inside the organization. The objective of this paper is to improve the centralization of file-sharing inside PSA - Marinduque. This project used a simulation tool to monitor, control time intervals, and understand the data propagation across a network. Cisco Packet Tracer, a simulation, and design software program was used, and SketchUp as well as Smartdraw for visualizing the existing and designed network plan. The Cisco Packet Tracer, a Wireless Local Area Network (WLAN) with centralized file-sharing, is designed to present the development of the simulation process for the designed Network Plan. The result of the simulation shows that the devices are configured correctly. In conclusion, this paper can help in implementing a network plan for centralized file-sharing that can be a significant tool to improve the file-sharing process inside an organization."
+      },
+
+      {
+        "title": "Development of Network Infrastructure Plan and Network Management Plan for Dolores National High School",
+        "authors": [
+          "Mark Daniel B. Garcia",
+          "John Kim Q. Manzano",
+          "Christofer John R. Robles",
+          "Jaren P. Villegas"
+        ],
+        "year": "2022",
+        "abstract": "In many ways, computer networks have enhanced people's lives. The extensively utilized local area network (LAN) is critical in medical services, the military, education, science, and government. LANs are being installed by businesses and corporations and by homes and schools. This project aims to create a network infrastructure plan to answer the client organization's challenges by enhancing its existing network. It focuses on building a network management strategy for the Dolores National High School in a form of computer network system and a security network plan. Based on the feasibility study, a new network design with a new network architecture will be developed, and viruses and system faults will be checked, as well as software and hardware will be updated. Additionally, this project is planned to boost network security by improving security protocols and upgrading standard security, providing security policies in the network, designing an efficient security network strategy, enhancing network firewall, and installing new anti-virus software."
+      },
+
+      {
+        "title": "Development of Web-Based Parish Information Management System",
+        "authors": [
+          "Jastene Gail R. De Castro",
+          "Jaymart P. Quinto",
+          "Kris R. Recalde",
+          "Roechan M. Pantoja"
+        ],
+        "year": "2022",
+        "abstract": "Currently, Roman Catholic Parishes in the province of Marinduque use a manual transaction method in which documents, files, and data are kept in a filing cabinet or one location. As a result, problems in information handling in the parish, such as inaccurate data, a misinformed community, and a slow service response, invalidates time and effort exerted by the parishioners. This research aims to develop a web-based information management system for parishes to assist them in handling sacramental documents, collections and donations, disseminating parish events and announcements, and parish information management. The researchers used interview as the data collection method while data flow diagram and use case diagram were used to illustrate significant processes and draw appropriate solutions. The prototyping design was used as the system design technique. The system was developed using PHP, JavaScript, HTML, CSS, Bootstrap, and MySQL. Web-Based Parish Information Management System was made and tested by the researchers to ensure the system's functionality meets the expectations of the target users. The researchers further recommend that future researchers explore the idea of using technology to full advantage in the field of information management."
+      },
+
+      {
+        "title": "Development of GTZ Emission Testing Center Online Reservation",
+        "authors": [
+          "Keyzie L. Macarang",
+          "Ronalyn Joy F. Manuba",
+          "Adam Lawrence M. Historillo",
+          "Denise Ann R. Sanchez"
+        ],
+        "year": "2022",
+        "abstract": "GTZ Emission Testing Center currently operates with a manual booking system. They are experiencing some problems in scheduling of walk-in clients as they come to their office to get their vehicle tested without prior notice. Thus, the researchers developed an online reservation system to reduce the effort and time for clients to set up appointments, receive services, and increase the efficacy of the organization's transaction process. The project primarily focuses on the online reservation for the GT7 Emission Testing Center. The system will be incorporated with an online payment platform so that clients can easily play anytime and anywhere. A Use Case Diagram was used to analyze and utilize the fundamental processes of the system. An orientation will be conducted for the target users to know the functionality updates and familiarization with the processes involved in the system. Comments regarding changes and upgrades have been recommended by the researcher's capstone project adviser to make the system more complete and valuable. Experimental runs have indicated that the developed system is ready for deployment."
+      },
+
+      {
+        "title": "Development of Library Management System for Division Library Hub Department of Education-Marinduque",
+        "authors": [
+          "Paola Vianca R. Almonte",
+          "Leanro Niel R. Manzo",
+          "Philip John M. Ricamara"
+        ],
+        "year": "2022",
+        "abstract": "The Library Management System using Barcode Reader at Boac Library Hub was developed to further improve and convert the manual process of borrowing and returning books and making reports into an automated procedure. The study also aimed to take advantage of the use of Information Technology resources in the library to determine its feasibility and to reduce the problems encountered in the Library Hub Boac, Marinduque, by both the borrowers and the librarian. The development of the system was made to solve different problems regarding library procedures and management. Several problems were encountered during the use of the manual system, especially in logging in/out and monitoring different reading materials. The developed system will be beneficial for the borrowers and the librarian since it will reduce the time, effort, and the resources to be used. Moreover, the system will also provide security and safety to all reading materials that are available in the library hub. Lastly, the researchers recommend future researchers to improve the system by including an online catalog, online reservation, and integrate with other library systems to further enhance the library management process."
+      },
+      {
+        "title": "Development of Civil Registration and Vital Statistics Information and Tabulation System",
+        "authors": [
+          "Ann Josie M. Laylay",
+          "Nonary L. Montemayor",
+          "Harold L. Magtagnob"
+        ],
+        "year": "2021",
+        "abstract": "The Civil Registration and Vital Statistics Information and Tabulation System was developed to provide a comprehensive and engaging system that helps ease a manual system in performing the task. The main goal of the project is to find solutions to the problems encountered by the PSA (Philippine Statistics Authority) in tabulating data and generating analysis reports. The system eliminates the time-consuming and laborious process of tabulation, and it serves as a learning aid for different sectors of government and walk-in researchers who depend on accurate tabulations for their case studies, population growth projections, and awareness establishment. The system's feasibility was determined through a series of interviews, observations, SWOT analysis, gap analysis, and cost and benefit analysis. The system was developed using C# as the programming language, Visual Studio as the framework, Xampp Server as the local server, and MySQL as the database. The functionality of the system was tested and evaluated using software quality evaluation instruments, and the results were very satisfactory."
+      },
+
+      {
+        "title": "Development of Enterprise Solution for MSWD-Gasan (Module 1)",
+        "authors": [
+          "Jessievel O. Julao",
+          "Jay Bryill Julious N. Rey",
+          "Marvie S. Rey",
+          "Rossana M. Malimata"
+        ],
+        "year": "2021",
+        "abstract": "The Municipal Social Welfare and Development Office (MSWDO) in Gasan, Marinduque, is responsible for providing welfare programs and services to uplift the living conditions and improve the quality of life for the poorest sector of the population. This study aimed to offer the MSWDO office an enterprise solution, including a scheduling and monitoring system, to decrease the struggle and difficulties of working through their existing system. The developed system provides a fast, accurate, effective, and more convenient way of storing, updating, organizing, managing, and retrieving data and services for the beneficiaries. The project involved studying the existing system, determining project feasibility through interviews and observations, designing and developing the enterprise solution, and conducting alpha testing. The system significantly improves and speeds up documentation, information management, and report generation processes, providing valuable support to MSWDO Gasan."
+      },
+
+      {
+        "title": "Development of Enterprise Solution for MSWD-Gasan (Module 2)",
+        "authors": [
+          "Mary Ann V. Hebron",
+          "Jesusa B. Malubag",
+          "Ma. Kristine G. Malapad",
+          "Carren F. Mores"
+        ],
+        "year": "2021",
+        "abstract": "The Municipal Social Welfare and Development Office (MSWDO) in Gasan, Marinduque, uses manual processes to manage client records, resulting in difficulties in preparing client records, printing reports, and managing requirements. This study aimed to design a web-based system that improves the MSWDO's existing system in managing different forms, applicant requirements, personal identification cards, and assistance management. The project used the prototyping method and accomplished it as a software process model. User Acceptance Testing and Software Quality Evaluation were conducted, resulting in a 4.6 out of 5 approval rating, indicating that the system excellently achieved the project objectives and solved the organization's problems."
+      },
+      {
+        "title": "A Research presented to the Faculty of Laboratory School Marinduque State College Boac Campus",
+        "authors": [
+          "Mark B. Manaog",
+          "Jonhdel D. Jasa",
+          "Raffy H. Lamonte",
+          "Mattew L. Mangol",
+          "Lloyn Aeson T. Aguilar"
+        ],
+        "year": "2020",
+        "abstract": "This paper deals with the conversion of a conventional tricycle into a treadmill bicycle. In this tricycle, the frame of the bicycle is completely modified, and the treadmill is placed between the two wheels, on which the user will walk. The mechanism used in this walking cycle is versatile of its kind in which the cycling pedals are replaced with a treadmill belt. This treadmill belt drives the cycle forward by introducing free wheels and shafts mechanism. The prototype design requires a treadmill belt, shafts, the frame of the treadmill, the free wheels, gears, chain-drive, and gear-chain. The platform on which the treadmill belt is placed is fabricated. All the links are made up of normal MS (mild steel) including the head which has direct contact with the treadmill belt."
+      },
+      {
+        "title": "Development of Financial and Monitoring System for MSWDO-BOAC",
+        "authors": [
+          "John Ronnel N. Nepomuceno",
+          "Reynalyn F. Luci",
+          "Cristy M. Gicar"
+        ],
+        "year": "2020",
+        "abstract": "The Municipal Social Welfare and Development Office (MSWDO) provides financial assistance or referrals without charge service to individuals and families who are in extremely difficult situations and have inadequate resources. The study was conducted to help the MSWD office have a financial and monitoring system that can eliminate the difficulties and problems brought by the existing system. This project aims to provide a more accurate and efficient way of managing, storing, and retrieving data and also to efficiently monitor the records of beneficiaries. The developed system will greatly help the school to overcome the problems brought by the manual system by providing an organized way of data processing, speeding up the application and id system process, and accurately generating reports. The developed system covers the senior citizen, person with disability and solo parent online and walk-in application, and senior citizen social pensioner walk-in application. The system provides its staff the ability to add, update, and search beneficiary's records. The system can accurately produce a control number to the beneficiary's identification card. The developed system can also visualize all the data from the applicants and beneficiaries and will generate reports needed by the office. The developed system was designed to help the MSWD office become efficient and effective in handling their financial assistance programs. The developed system can eliminate errors by providing an organized way of data processing."
+      },
+      {
+        "title": "Development of Community Risk Assessment System for Municipal Disaster Risk Reduction Management Office, Municipality of Sta, Cruz",
+        "authors": [
+          "Carla Mae M. Loto",
+          "Arjay M. Janda",
+          "Jayson S. Fabaleña",
+          "Christin Joy O. De Belen"
+        ],
+        "year": "2020",
+        "abstract": "The developed system was entitled Community Risk Assessment System for Municipal Risk Reduction Management Office, Municipality of Sta. Cruz. This study was developed to cater to the organization's problem and analyze present status. The system's development was processed through a series of interviews and followed the prototyping technique to attain the system's requirements. The developers conducted several feasibility analysis procedures to determine the possibility of the proposed system could be implemented. Prototyping methodology was used to develop the system. It also includes stress testing to identify the limitation of the database of the system. Sets of questionnaires were prepared for implementing ISO 9126 test, which was rated using Likert's scale scoring basis. The system was primarily developed to help and lessen the problem encountered within the organization. The functionality of the system includes recording, updating, and deleting the data. It also features a hazard map to navigate the affected area easily. It is also capable of preparing and consolidating the community risk assessment report, database management system in which the organization will easily manage and organize all the reports. The system provides an assessment in which the organization will easily plan and prepare in time of disaster with the report analyzed by the developed system."
+      },
+      {
+        "title": "Development of Guidance and Counseling Information System for MSC",
+        "authors": [
+          "Den Ver S. Solas",
+          "Leo Bernabe D. Lanot",
+          "Bruce Ariel E. Dy",
+          "Ericka O. Opis"
+        ],
+        "year": "2020",
+        "abstract": "The Guidance and Counseling Information System for Marinduque State College was developed to process the students' entrance exam schedule and counseling. The developed system aims to give an easy transaction to the Director, Guidance Counselor, and support staff of the Guidance and Counseling Office. In addition, it will provide an effective solution to the various problems encountered by the staff, such as 1) creating reports and analysis manually related to counseling and entrance exam takes a lot of time, 2) some students who requested counseling did not approach the guidance counselor on the scheduled date. To fully understand the organization's process, the developers conducted a preliminary investigation to identify the existing problems being encountered by the staff; gathered data to provide useful information and feasibility study to identify the possibilities and opportunities of implementing the system. As a result of the feasibility study, it was operationally, technically, and economically feasible. The developers used the prototyping model in developing the project. The developed system has user-friendly features. The system can effectively automate the recording, retrieval, and monitoring of students' counseling records, personal information profiles, and entrance exam results. Also, the system can monitor the total number of enrollment slots per course compared to available slots and can generate reports automatically. The findings revealed that the developed system is secure, accessible, and met the evaluators' expectations in terms of functionality, reliability, usability, efficiency."
+      },
+      {
+        "title": "Development of Mobile Algebra Game for Junior High School Students",
+        "authors": [
+          "John Angelo S. Leal",
+          "Avegail O. Osinsao",
+          "Vanessa Mher M. Licda"
+        ],
+        "year": "2020",
+        "abstract": "With the abundance of smartphones, technology is without a doubt truly useful in everyone's life, but it also comes with its own disadvantages and those disadvantages mostly derive from entertainment. The development of Mobile Algebra Game would be both entertaining and educational for the students and useful for the teacher. The project aspires to design and develop a mobile game that would lead the student's addiction to games to an effective way of learning. To attain the said goal for the project, Requirement Analysis, Feasibility Analysis, and Development and Testing procedures are used as the main methods. The result for the requirement analysis shows that data gathered through questionnaires would sustain the objective of the project. The result for the feasibility analysis exhibits that the project is both operationally and technically feasible as it meets the resources needed and the users are fully capable of operating the system. Lastly, through the development and testing procedure, the project shows a high probability of success on attaining its objectives and would definitely improve the quality of life of both the students and the teacher when it comes to studying and teaching. In conclusion, not only the Mobile Algebra Game is technically and operationally feasible, but it can also utilize the entertaining nature of games and incorporate the pedagogical content that the teacher would want his students to learn."
+      }
+    ]
+  }
+]
