@@ -208,3 +208,16 @@ body {
   pointer-events: none;
   cursor: not-allowed;
 }
+
+.nav-pills .nav-link.active {
+  border-radius: 4px;
+  background-color: #800f2f;
+}
+
+.nav-link {
+  color: #800f2f;
+}
+
+.nav-pills .nav-link {
+  color: #800f2f;
+}

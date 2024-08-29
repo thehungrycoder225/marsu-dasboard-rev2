@@ -55,14 +55,36 @@
       <!-- Main Content-->
       <!-- Licensure Passers -->
       <section class="my-3">
-        <div class="row align-baseline gy-3">
-          <div class="col-xl-8">
-            <div class="card p-4 mb-1 h-100">
-              <canvas id="cUnitsChart" style="width: 100%"></canvas>
+        <div class="row align-baseline gy-2 mb-3">
+          <div class="col-md-4">
+            <div class="card p-4 h-100 text-center">
+              <img
+                class="w-50 m-auto d-block"
+                src="../assets/images/logo.png"
+                alt=""
+              />
+              <h4 class="text-dark fw-bold fs-5">Licensure Passers</h4>
+              <p class="fw-bold"
+                >Total Examinees: <span id="totalExaminees"> 468 </span></p
+              >
+              <p class="fw-bold"
+                >Total Passers: <span id="totalPassers"> 344 </span></p
+              >
+
+              <p class="fw-bold"
+                >Passing Rate: <span id="passingRate">73.50% </span></p
+              >
             </div>
           </div>
-          <div class="col-xl-4">
-            <div class="card p-2 h-100">
+          <div class="col-md-8">
+            <div class="card p-4 mb-1 h-100">
+              <canvas id="cUnitsChart"></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="row gy-3">
+          <div class="col-md-12">
+            <div class="card p-3 h-100">
               <table
                 class="table table-sm table-hover text-sm-1"
                 style="text-align: left"
@@ -72,7 +94,8 @@
                   <tr>
                     <th>Program</th>
                     <th>Exam Date</th>
-                    <th colspan="2">Number of 1st Time Passers</th>
+                    <th>1st Time Takers</th>
+                    <th colspan="1">1st Time Passers</th>
                   </tr>
                 </thead>
                 <tbody class="fw-semibold"> </tbody>
@@ -121,10 +144,22 @@
             </div></div
           >
         </div>
-        <div class="row my-3 gy-3">
-          <div class="col-xl-12">
-            <div class="card p-4 h-100">
-              <div id="chartsContainer"></div>
+        <div class="row my-3 gy-3 align-items-center">
+          <div class="col-md-3">
+            <div
+              class="nav flex-column nav-pills"
+              id="v-pills-tab"
+              role="tablist"
+              aria-orientation="vertical"
+            >
+              <!-- Tabs will be dynamically inserted here -->
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="card p-3">
+              <div class="tab-content" id="v-pills-tabContent">
+                <!-- Tab panes will be dynamically inserted here -->
+              </div>
             </div>
           </div>
         </div>
