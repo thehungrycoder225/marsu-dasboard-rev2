@@ -225,3 +225,7 @@ body {
 .nav-pills .nav-link {
   color: #800f2f;
 }
+
+section {
+  margin: 2rem;
+}
