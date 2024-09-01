@@ -8,7 +8,6 @@ fetch('../data/exam-ds.JSON')
   .then((response) => response.json())
   .then((data) => {
     // Extract the required data for the chart
-    console.log(data);
     const programs = [];
     const takers = [];
     const passers = [];
