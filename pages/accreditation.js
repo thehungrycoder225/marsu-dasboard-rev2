@@ -1,5 +1,5 @@
 // Fetch the JSON data
-fetch('../data/accreditation-ds.json')
+fetch('../data/accreditation-ds.JSON')
   .then((response) => response.json())
   .then((data) => {
     // Process the data and create charts and tables for each campus
