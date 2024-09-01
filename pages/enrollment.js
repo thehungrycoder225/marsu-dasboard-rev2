@@ -94,6 +94,7 @@ function createTab(campus, programs, index) {
       ],
     },
     options: {
+      responsive: true,
       indexAxis: 'y',
       plugins: {
         legend: {
