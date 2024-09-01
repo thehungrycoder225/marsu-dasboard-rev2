@@ -96,8 +96,8 @@ fetch('../data/exam-ds.JSON')
       row.appendChild(examDateCell);
 
       const takersCell = document.createElement('td');
-      takersCell.textContent = takers[i]
-      row.appendChild(takersCell)
+      takersCell.textContent = takers[i];
+      row.appendChild(takersCell);
 
       const passersCell = document.createElement('td');
       passersCell.textContent = passers[i];
@@ -107,7 +107,11 @@ fetch('../data/exam-ds.JSON')
     }
 
     // Create the pie chart
-    const pieCtx = document.querySelector('#passersTakersChart').getContext('2d');
+    const pieCtx = document
+
+      .querySelector('#passersTakersChart')
+
+      .getContext('2d');
 
     // Calculate percentages for each program
     const percentages = programs.map((program, index) => {
@@ -115,24 +119,27 @@ fetch('../data/exam-ds.JSON')
       const passersPercentage = (passers[index] / total) * 100;
       return {
         program,
-        passersPercentage
+        passersPercentage,
       };
     });
 
     // Prepare data for the pie chart
-    const labels = percentages.map(p => p.program);
-    const passersData = percentages.map(p => p.passersPercentage);
-
+    const labels = percentages.map((p) => p.program);
+    const passersData = percentages.map((p) => p.passersPercentage);
 
     new Chart(pieCtx, {
       type: 'doughnut',
       data: {
         labels: labels,
-        datasets: [{
-          label: 'Passers Percentage',
-          data: passersData,
-          backgroundColor: labels.map((_, index) => `hsl(${index * 360 / labels.length}, 70%, 50%)`),
-        }]
+        datasets: [
+          {
+            label: 'Passers Percentage',
+            data: passersData,
+            backgroundColor: labels.map(
+              (_, index) => `hsl(${(index * 360) / labels.length}, 70%, 50%)`
+            ),
+          },
+        ],
       },
       options: {
         responsive: true,
@@ -142,10 +149,9 @@ fetch('../data/exam-ds.JSON')
           },
           title: {
             display: true,
-            text: 'Passers Percentage per Program'
-          }
-        }
-      }
+            text: 'Passers Percentage per Program',
+          },
+        },
+      },
     });
-
   });

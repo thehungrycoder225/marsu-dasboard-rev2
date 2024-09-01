@@ -59,10 +59,14 @@ function createTab(campus, programs, index) {
   programs.forEach((program) => {
     labels.push(program['Undergraduate Program Offered']);
     priorityData.push(
-      program['No. of Enrollees for 1st Semester AY 2023-2024']['Priority Program'] || 0
+      program['No. of Enrollees for 1st Semester AY 2023-2024'][
+        'Priority Program'
+      ] || 0
     );
     nonPriorityData.push(
-      program['No. of Enrollees for 1st Semester AY 2023-2024']['Non-Priority Program'] || 0
+      program['No. of Enrollees for 1st Semester AY 2023-2024'][
+        'Non-Priority Program'
+      ] || 0
     );
   });
 
@@ -91,6 +95,11 @@ function createTab(campus, programs, index) {
     },
     options: {
       indexAxis: 'y',
+      plugins: {
+        legend: {
+          position: 'bottom',
+        },
+      },
       scales: {
         x: {
           stacked: true,
