@@ -1,0 +1,30 @@
+{
+  "accreditation": [
+    {
+      "campus": "MSC Boac Main Campus (Tanza, Boac, Marinduque)",
+      "programs": [
+        {
+          "id": 1,
+          "program": "Master of Arts in Education major in Educational Management",
+          "start_date": "1987-1988",
+          "end_date": "October 1, 2023 - Sep-30-2027",
+          "level": "Level 3"
+        },
+        {
+          "id": 2,
+          "program": "Master in Public Administration major in: Organizational Studies/ Local Government and Regional Administration",
+          "start_date": "1995-1996",
+          "end_date": "October 1, 2023 - Sep-30-2027",
+          "level": "Level 3"
+        },
+        {
+          "id": 3,
+          "program": "Doctor of Education major in Curriculum Development and Management",
+          "start_date": "2008-2009",
+          "end_date": "October 1, 2022 - Sep-01-2023",
+          "level": "Level 2"
+        }
+      ]
+    }
+  ]
+}

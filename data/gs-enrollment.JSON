@@ -1,0 +1,19 @@
+{
+  "Main Campus": {
+    "Priority Program": {
+      "1": "Doctor of Education",
+      "2": "Master Arts in Education",
+      "3": "Master of Public Administration",
+      "4": "Master in Information Technology"
+    },
+    "Non-Priority Program": {
+      "1": "43",
+      "2": "457",
+      "3": {
+        "Priority Program": "45",
+        "Non-Priority Program": "30"
+      },
+      "4": "7"
+    }
+  }
+}

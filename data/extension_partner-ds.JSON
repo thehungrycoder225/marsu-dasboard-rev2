@@ -1,0 +1,228 @@
+Sure, here's the data from the table transposed into JSON format:
+
+```json
+[
+    {
+        "Partner LGU /Community/ Industry / SMEs / Private or Public Agencies / NGOs": "LGU Boac",
+        "Extension Program / Activities": [
+            {
+                "Program": "The eSalba for Disaster and Health Risks Reduction",
+                "Start Date": "1/31/2023",
+                "End Date": "2/2/2023"
+            },
+            {
+                "Program": "Masaganang Agrikultura, Maunlad na Ekonomiya",
+                "Start Date": "5/26/2023",
+                "End Date": "5/26/2023"
+            },
+            {
+                "Program": "Consultative Meeting on the Status of Bagumbungan Cave",
+                "Start Date": "3/16/2023",
+                "End Date": "3/16/2023"
+            }
+        ]
+    },
+    {
+        "Partner LGU /Community/ Industry / SMEs / Private or Public Agencies / NGOs": "LGU Gasan",
+        "Extension Program / Activities": [
+            {
+                "Program": "The eSalba for Disaster and Health Risks Reduction",
+                "Start Date": "1/31/2023",
+                "End Date": "2/2/2023"
+            },
+            {
+                "Program": "Distribution of Farm Materials to Seaweed Farmers",
+                "Start Date": "3/3/2023",
+                "End Date": "3/3/2023"
+            },
+            {
+                "Program": "Consultative Meeting on the Status of Bagumbungan Cave",
+                "Start Date": "3/16/2023",
+                "End Date": "3/16/2023"
+            }
+        ]
+    },
+    {
+        "Partner LGU /Community/ Industry / SMEs / Private or Public Agencies / NGOs": "LGU Mogpog",
+        "Extension Program / Activities": [
+            {
+                "Program": "The eSalba for Disaster and Health Risks Reduction",
+                "Start Date": "1/31/2023",
+                "End Date": "2/2/2023"
+            },
+            {
+                "Program": "Consultative Meeting on the Status of Bagumbungan Cave",
+                "Start Date": "3/16/2023",
+                "End Date": "3/16/2023"
+            }
+        ]
+    },
+    {
+        "Partner LGU /Community/ Industry / SMEs / Private or Public Agencies / NGOs": "LGU Torrijos",
+        "Extension Program / Activities": [
+            {
+                "Program": "The eSalba for Disaster and Health Risks Reduction",
+                "Start Date": "1/31/2023",
+                "End Date": "2/2/2023"
+            },
+            {
+                "Program": "Consultative Meeting on the Status of Bagumbungan Cave",
+                "Start Date": "3/16/2023",
+                "End Date": "3/16/2023"
+            }
+        ]
+    },
+    {
+        "Partner LGU /Community/ Industry / SMEs / Private or Public Agencies / NGOs": "LGU Buenavista",
+        "Extension Program / Activities": [
+            {
+                "Program": "The eSalba for Disaster and Health Risks Reduction",
+                "Start Date": "1/31/2023",
+                "End Date": "2/2/2023"
+            },
+            {
+                "Program": "Consultative Meeting on the Status of Bagumbungan Cave",
+                "Start Date": "3/16/2023",
+                "End Date": "3/16/2023"
+            },
+            {
+                "Program": "Capacity-Building Training “Start-Up Success: Nurturing an Entrepreneurial Mindset and Embodying Core Values”",
+                "Start Date": "10/23/2023",
+                "End Date": "10/23/2023"
+            }
+        ]
+    },
+    {
+        "Partner LGU /Community/ Industry / SMEs / Private or Public Agencies / NGOs": "LGU Sta. Cruz",
+        "Extension Program / Activities": [
+            {
+                "Program": "The eSalba for Disaster and Health Risks Reduction",
+                "Start Date": "1/31/2023",
+                "End Date": "2/2/2023"
+            },
+            {
+                "Program": "Consultative Meeting on the Status of Bagumbungan Cave",
+                "Start Date": "3/16/2023",
+                "End Date": "3/16/2023"
+            },
+            {
+                "Program": "Consultative Meeting on the Status of Bagumbungan Cave",
+                "Start Date": "3/23/2023",
+                "End Date": "3/23/2023"
+            },
+            {
+                "Program": "Planning Workshop for the Proposed Agri-Ecotourism Farm",
+                "Start Date": "4/27/2023",
+                "End Date": "4/28/2023"
+            }
+        ]
+    },
+    {
+        "Partner LGU /Community/ Industry / SMEs / Private or Public Agencies / NGOs": "MAPUA",
+        "Extension Program / Activities": [
+            {
+                "Program": "The eSalba for Disaster and Health Risks Reduction",
+                "Start Date": "1/31/2023",
+                "End Date": "2/2/2023"
+            }
+        ]
+    },
+    {
+        "Partner LGU /Community/ Industry / SMEs / Private or Public Agencies / NGOs": "Farmer Association",
+        "Extension Program / Activities": [
+            {
+                "Program": "Free range chicken production",
+                "Start Date": "10/28/2023",
+                "End Date": "10/28/2023"
+            },
+            {
+                "Program": "Free range chicken production",
+                "Start Date": "11/18/2023",
+                "End Date": "10/28/2023"
+            }
+        ]
+    },
+    {
+        "Partner LGU /Community/ Industry / SMEs / Private or Public Agencies / NGOs": "DENR",
+        "Extension Program / Activities": [
+            {
+                "Program": "Asian Waterbird Census 2023",
+                "Start Date": "1/24/2023",
+                "End Date": "1/24/2023"
+            },
+            {
+                "Program": "Consultative Meeting on the Status of Bagumbungan Cave",
+                "Start Date": "3/16/2023",
+                "End Date": "3/16/2023"
+            },
+            {
+                "Program": "Consultative Meeting on the Status of Bagumbungan Cave",
+                "Start Date": "3/23/2023",
+                "End Date": "3/23/2023"
+            },
+            {
+                "Program": "2nd Quarter Protected PAMB En Banc Meeting of Marinduque Wildlife Sanctuary - Protected Area Management Board (MWS-PAMB)",
+                "Start Date": "4/27/2023",
+                "End Date": "4/27/2023"
+            },
+            {
+                "Program": "Regular Protected Area Management Board (PAMB) of the Marinduque Wildlife Sanctuary (MWS) Meeting",
+                "Start Date": "2/23/2023",
+                "End Date": "2/23/2023"
+            },
+            {
+                "Program": "Regional Monitoring and Validation of the Nipa Stands in Marinduque Under DENR-MSC ENGP",
+                "Start Date": "6/6/2023",
+                "End Date": "6/7/2023"
+            },
+            {
+                "Program": "Coastal Clean up and Tree Planting in Celebration of World Ocean Day and Coral Triangle Day",
+                "Start Date": "6/9/2023",
+                "End Date": "6/9/2023"
+            },
+            {
+                "Program": "Rapid Assessment of Cave",
+                "Start Date": "6/14/2023",
+                "End Date": "6/16/2023"
+            },
+            {
+                "Program": "Meeting for the Sub-Agreement re. GMAP Marinduque",
+                "Start Date": "6/21/2023",
+                "End Date": "6/21/2023"
+            },
+            {
+                "Program": "Refresher Course for the Effective Management of Marinduque Wildlife Sanctuary for PAMB Members, PAMO and TSD Staff",
+                "Start Date": "6/21/2023",
+                "End Date": "6/23/2023"
+            },
+            {
+                "Program": "Special PCAT Meeting",
+                "Start Date": "6/29/2023",
+                "End Date": "6/29/2023"
+            },
+            {
+                "Program": "Focus Group Discussion Biodiversity Monitoring System, Marinduque Wildlife Sanctuary",
+                "Start Date": "8/10/2023",
+                "End Date": "8/10/2023"
+            },
+            {
+                "Program": "Third  Protected Area Management Board (PAMB) of the Marinduque Wildlife Sanctuary (MWS) Meeting",
+                "Start Date": "8/24/2023",
+                "End Date": "8/24/2023"
+            }
+        ]
+    },
+    {
+        "Partner LGU /Community/ Industry / SMEs / Private or Public Agencies / NGOs": "MAO",
+        "Extension Program / Activities": [
+            {
+                "Program": "Shing-A-ling Snack: Product Innovation & Marketing  Strategies",
+                "Start Date": "2/28/2023",
+                "End Date": "2/28/2023"
+            }
+        ]
+   
+
+ }
+]
+```
