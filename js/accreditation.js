@@ -17,108 +17,7 @@ function createChart(campus, programs) {
   // Create a column for the chart
   const col = document.createElement('div');
   col.className = 'col-md-3';
-  document.addEventListener('DOMContentLoaded', () => {
-    // Fetch the JSON data
-    fetch('../data/accreditation-ds.json')
-      .then((response) => response.json())
-      .then((data) => {
-        // Process the data and create charts and tables for each campus
-        const campuses = Object.keys(data);
-        campuses.forEach((campus, index) => {
-          if (data[campus]) {
-            createChart(campus, data[campus]);
-            createTab(campus, data[campus], index);
-          }
-        });
-      })
-      .catch((error) => console.error('Error fetching the JSON data:', error));
 
-    function createChart(campus, programs) {
-      // Create a column for the chart
-      const col = document.createElement('div');
-      col.className = 'col-md-3';
-
-      // Create a card for the chart
-      const card = document.createElement('div');
-      card.className = 'card';
-
-      // Create a card body
-      const cardBody = document.createElement('div');
-      cardBody.className = 'card-body';
-
-      // Create a title for the chart
-      const title = document.createElement('h5');
-      title.className = 'fw-bold text-center';
-      title.textContent = campus;
-      cardBody.appendChild(title);
-
-      // Create a canvas element for the chart
-      const canvas = document.createElement('canvas');
-      canvas.id = campus.replace(/\s+/g, '-');
-      cardBody.appendChild(canvas);
-
-      card.appendChild(cardBody);
-      col.appendChild(card);
-      document.getElementById('chartsContainer').appendChild(col);
-
-      // Prepare the data for the chart
-      const labels = [];
-      const data = [];
-      const backgroundColors = [
-        '#800f2f',
-        '#fb8b24',
-        '#912941',
-        '#a13f53',
-        '#b15366',
-        '#c16779',
-        '#d17b8d',
-        '#e08fa1',
-        '#f0a3b5',
-        '#ffb8c9',
-        '#fb9431',
-        '#fc9d3d',
-        '#fca648',
-        '#fcae54',
-        '#fdb760',
-        '#febf6d',
-        '#fec679',
-        '#ffce86',
-      ];
-      programs.forEach((program) => {
-        const level = program['Program Accreditation Status'];
-        if (!labels.includes(level)) {
-          labels.push(level);
-          data.push(1);
-        } else {
-          const index = labels.indexOf(level);
-          data[index]++;
-        }
-      });
-
-      // Create the chart
-      const ctx = canvas.getContext('2d');
-      new Chart(ctx, {
-        type: 'doughnut',
-        data: {
-          labels: labels,
-          datasets: [
-            {
-              data: data,
-              backgroundColor: backgroundColors.slice(0, labels.length),
-            },
-          ],
-        },
-        options: {
-          responsive: true,
-          plugins: {
-            legend: {
-              position: 'bottom',
-            },
-          },
-        },
-      });
-    }
-  });
   // Create a card for the chart
   const card = document.createElement('div');
   card.className = 'card';
@@ -167,11 +66,11 @@ function createChart(campus, programs) {
   ];
   programs.forEach((program) => {
     const level = program['Program Accreditation Status'];
-    if (!labels.includes(level)) {
+    const index = labels.indexOf(level);
+    if (index === -1) {
       labels.push(level);
       data.push(1);
     } else {
-      const index = labels.indexOf(level);
       data[index]++;
     }
   });
@@ -247,7 +146,6 @@ function createCollapse(campus, programs, index) {
   thIndex.textContent = '#';
   const thProgram = document.createElement('th');
   thProgram.textContent = 'Undergraduate Programs Offered';
-  1;
   const thYear = document.createElement('th');
   thYear.textContent = 'Year of Initial Operation';
   const thStatus = document.createElement('th');
