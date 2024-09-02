@@ -8,7 +8,6 @@ fetch('../data/accreditation-ds.JSON')
       if (data[campus]) {
         createChart(campus, data[campus]);
         createCollapse(campus, data[campus], index);
-        console.table(data[campus]);
       }
     });
   })
