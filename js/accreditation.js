@@ -139,7 +139,7 @@ function createCollapse(campus, programs, index) {
   cardBody.className = 'card-body my-2 table-responsive';
   // Create table for the card body
   const table = document.createElement('table');
-  table.className = 'table able-sm table-hover text-sm-1 align-middle ';
+  table.className = 'table able-sm table-hover text-sm-1 w-100';
   const thead = document.createElement('thead');
   const tr = document.createElement('tr');
   const thIndex = document.createElement('th');
@@ -185,4 +185,10 @@ function createCollapse(campus, programs, index) {
   collapseDiv.appendChild(cardBody);
   card.appendChild(collapseDiv);
   accordion.appendChild(card);
+
+  new DataTable(table, {
+    paging: true,
+    searching: true,
+    info: true,
+  });
 }
