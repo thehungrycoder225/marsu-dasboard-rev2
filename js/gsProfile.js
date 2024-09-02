@@ -86,6 +86,7 @@ function fetchGSEnrollment() {
           ],
         },
         options: {
+          responsive: true,
           plugins: {
             legend: {
               display: true,
