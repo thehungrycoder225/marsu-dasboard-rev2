@@ -18,10 +18,7 @@ function displayTable() {
             `;
         tableBody.appendChild(row);
       });
-      new DataTable(document.querySelector('#extensionTable'), {
-        searchable: true,
-        sortable: true,
-      });
+      new DataTable(document.querySelector('#extensionTable'), {});
     })
     .catch((error) => console.error('Error fetching data:', error));
 }
