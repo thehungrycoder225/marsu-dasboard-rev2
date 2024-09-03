@@ -18,7 +18,9 @@ function displayTable() {
             `;
         tableBody.appendChild(row);
       });
-      new DataTable(document.querySelector('#extensionTable'), {});
+      new DataTable('#extensionTable', {
+        responsive: true,
+      });
     })
     .catch((error) => console.error('Error fetching data:', error));
 }
@@ -41,7 +43,9 @@ function displayTable2() {
         `;
         tableBody.appendChild(row);
       });
-      new DataTable(document.querySelector('#extensionTable2'), {});
+      new DataTable('#extensionTable2', {
+        responsive: true,
+      });
     });
 }
 
@@ -88,7 +92,9 @@ function displayTable3() {
         newRow.insertCell(2).textContent = row.startDate;
         newRow.insertCell(3).textContent = row.endDate;
       });
-      new DataTable('#extensionTable3');
+      new DataTable('#extensionTable3', {
+        responsive: true,
+      });
 
       // Prepare data for the column chart
       const labels = Object.keys(programCount);
