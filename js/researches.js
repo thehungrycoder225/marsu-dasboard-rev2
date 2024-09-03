@@ -49,7 +49,7 @@ function createChart(
   data,
   backgroundColor,
   borderColor,
-  legendDisplay
+  showLabel
 ) {
   new Chart(ctx, {
     type: chartType,
@@ -57,7 +57,7 @@ function createChart(
       labels: labels,
       datasets: [
         {
-          label: 'Count',
+          label: 'Data',
           data: data,
           backgroundColor: backgroundColor,
           borderColor: borderColor,
@@ -66,20 +66,16 @@ function createChart(
       ],
     },
     options: {
+      plugins: {
+        legend: {
+          display: showLabel || false,
+          position: 'bottom',
+        },
+      },
       responsive: true,
-      indexAxis: 'x',
       scales: {
         y: {
           beginAtZero: true,
-        },
-        x: {
-          beginAtZero: true,
-        },
-      },
-      plugins: {
-        legend: {
-          display: legendDisplay,
-          position: 'bottom',
         },
       },
     },
@@ -99,12 +95,12 @@ async function displayResearchProfile() {
 
       const row = document.createElement('tr');
       row.innerHTML = `
-        <td>${item['Research Title']}</td>
+        <td>${item['Research Title'] || 'N/A'}</td>
         <td>${researchers}</td>
-        <td>${item['Status of Research']}</td>
-        <td>${item['Venue']}</td>
-        <td>${item['Duration of Research']['Date Started']}</td>
-        <td>${item['Duration of Research']['Date of Completion']}</td>
+        <td>${item['Status of Research'] || 'N/A'}</td>
+        <td>${item['Venue'] || 'N/A'}</td>
+        <td>${item['Duration of Research']['Date Started'] || 'N/A'}</td>
+        <td>${item['Duration of Research']['Date of Completion'] || 'N/A'}</td>
       `;
       tableBody.appendChild(row);
     });
@@ -122,56 +118,18 @@ async function displayResearchProfile() {
       Object.keys(researcherCount),
       Object.values(researcherCount),
       '#800f2f',
-      '#800f2f',
-      false
+      '#800f2f'
     );
 
     const pieChartCtx = document.getElementById('pieChart').getContext('2d');
     createChart(
       pieChartCtx,
-      'pie',
+      'doughnut',
       Object.keys(forumTypeCount),
       Object.values(forumTypeCount),
-      [
-        '#800f2f',
-        '#fb8b24',
-        '#912941',
-        '#a13f53',
-        '#b15366',
-        '#c16779',
-        '#d17b8d',
-        '#e08fa1',
-        '#f0a3b5',
-        '#ffb8c9',
-        '#fb9431',
-        '#fc9d3d',
-        '#fca648',
-        '#fcae54',
-        '#fdb760',
-        '#febf6d',
-        '#fec679',
-        '#ffce86',
-      ],
-      [
-        '#800f2f',
-        '#fb8b24',
-        '#912941',
-        '#a13f53',
-        '#b15366',
-        '#c16779',
-        '#d17b8d',
-        '#e08fa1',
-        '#f0a3b5',
-        '#ffb8c9',
-        '#fb9431',
-        '#fc9d3d',
-        '#fca648',
-        '#fcae54',
-        '#fdb760',
-        '#febf6d',
-        '#fec679',
-        '#ffce86',
-      ]
+      ['  #800f2f', '#fb8b24', '#ffab67'],
+      ['  #cf8890', '#ffcba3', '#ffdbc1'],
+      true
     );
   } else {
     console.error('No data available to create charts.');
