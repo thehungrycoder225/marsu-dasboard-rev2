@@ -111,7 +111,9 @@ async function displayResearchProfile() {
 
     const { researcherCount, forumTypeCount } = prepareData(data);
 
-    const barChartCtx = document.getElementById('barChart').getContext('2d');
+    const barChartCtx = document
+      .getElementById('researchBarChart')
+      .getContext('2d');
     createChart(
       barChartCtx,
       'bar',
@@ -121,7 +123,9 @@ async function displayResearchProfile() {
       '#800f2f'
     );
 
-    const pieChartCtx = document.getElementById('pieChart').getContext('2d');
+    const pieChartCtx = document
+      .getElementById('researchPieChart')
+      .getContext('2d');
     createChart(
       pieChartCtx,
       'doughnut',
@@ -136,4 +140,4 @@ async function displayResearchProfile() {
   }
 }
 
-document.addEventListener('DOMContentLoaded', displayResearchProfile);
+displayResearchProfile();
