@@ -1,6 +1,23 @@
 import React from 'react';
+import Chart from 'react-apexcharts';
 
 function Dashboard() {
+  const chartOptions = {
+    chart: {
+      id: 'example-chart',
+    },
+    xaxis: {
+      categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+    },
+  };
+
+  const chartSeries = [
+    {
+      name: 'Sales',
+      data: [30, 40, 35, 50, 49, 60],
+    },
+  ];
+
   return (
     <div className='antialiased'>
       <nav className='bg-white border-b border-gray-200 px-4 py-2.5 dark:bg-rose-800 dark:border-rose-800 fixed left-0 right-0 top-0 z-50'>
@@ -358,7 +375,14 @@ function Dashboard() {
       </aside>
       <main className='p-4 md:ml-64 h-auto pt-20'>
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-4'>
-          <div className='border-2 border-dashed border-gray-300 rounded-lg dark:border-gray-600 h-32 md:h-64'></div>
+          <div className='border-2 border-dashed border-gray-300 rounded-lg dark:border-gray-600 h-32 md:h-64'>
+            <Chart
+              options={chartOptions}
+              series={chartSeries}
+              type='bar'
+              className='h-32 md:h-64'
+            />
+          </div>
           <div className='border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-32 md:h-64'></div>
           <div className='border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-32 md:h-64'></div>
           <div className='border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-32 md:h-64'></div>

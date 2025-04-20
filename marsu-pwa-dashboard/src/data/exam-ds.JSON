@@ -1,0 +1,68 @@
+{
+  "Undergraduate Program Offered": [
+    {
+      "Program": "Bachelor of Science in Nursing",
+      "Date": "May & November 2023",
+      "Number of 1st Time Takers": 90,
+      "Number of 1st Time Passers": 86
+    },
+    {
+      "Program": "Bachelor of Science in Social Work",
+      "Date": "September 2023",
+      "Number of 1st Time Takers": 52,
+      "Number of 1st Time Passers": 37
+    },
+    {
+      "Program": "Bacelor of Science in Electrical Engineering",
+      "Date": "April & September 2023",
+      "Number of 1st Time Takers": 26,
+      "Number of 1st Time Passers": 20
+    },
+    {
+      "Program": "Bachelor of Science in Electronics Engineering",
+      "Date": "April & October 2023",
+      "Number of 1st Time Takers": 18,
+      "Number of 1st Time Passers": 5
+    },
+    {
+      "Program": "Bachelor of Science in Civil Engineering",
+      "Date": "April & November 2023",
+      "Number of 1st Time Takers": 119,
+      "Number of 1st Time Passers": 57
+    },
+    {
+      "Program": "Bachelor of Science in Mechanical Engineering",
+      "Date": "February & August 2023",
+      "Number of 1st Time Takers": 16,
+      "Number of 1st Time Passers": 15
+    },
+    {
+      "Program": "Bachelor of Secondary Education",
+      "Date": "March & September 2023",
+      "Number of 1st Time Takers": 101,
+      "Number of 1st Time Passers": 86
+    },
+    {
+      "Program": "Bachelor of Elementary Education",
+      "Date": "March & September 2023",
+      "Number of 1st Time Takers": 23,
+      "Number of 1st Time Passers": 23
+    }
+  ],
+  "Campus 2 (GASAN CAMPUS-Banuyo, Gasan, Marinduque)": [
+    {
+      "Program": "Bachelor of Science in Fisheries",
+      "Date": "October 2023",
+      "Number of 1st Time Takers": 7,
+      "Number of 1st Time Passers": 4
+    }
+  ],
+  "Campus 4 (TORRIJOS CAMPUS-Poctoy, Torrijos, Marinduque)": [
+    {
+      "Program": "Bachelor of Science in Agriculture",
+      "Date": "November 2023",
+      "Number of 1st Time Takers": 16,
+      "Number of 1st Time Passers": 11
+    }
+  ]
+}
