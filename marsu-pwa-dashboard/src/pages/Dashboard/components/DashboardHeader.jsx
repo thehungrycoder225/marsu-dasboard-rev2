@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <div className='md:flex md:items-center md:justify-between bg-rose-800 border-b border-gray-200 px-4 py-2.5  w-full'>
+    <div className='md:flex md:items-center md:justify-between bg-rose-900 border-b border-gray-200 px-4 py-2.5  w-full'>
       <div className='min-w-0 '>
         <img
           src='logo.png'

@@ -1,6 +1,6 @@
 import Chart from 'react-apexcharts';
 import { useState, useEffect } from 'react';
-import { enrollmentData } from '../../../data/data-source';
+import { enrollmentData, licensureExamsData } from '../../../data/data-source';
 
 export default function Charts() {
   const [branchOverviewData, setBranchOverviewData] = useState({
@@ -17,6 +17,14 @@ export default function Charts() {
     categories: [],
     series: [],
   });
+
+  const [licensureBranchPerformance, setLicensureBranchPerformance] = useState({
+    categories: [],
+    series: [],
+  });
+  const [programPassingRates, setProgramPassingRates] = useState([]);
+  const [programComparisonData, setProgramComparisonData] = useState([]);
+  const [efficiencySnapshotData, setEfficiencySnapshotData] = useState([]);
 
   useEffect(() => {
     // Process data for Branch-Level Overview (Stacked Bar Chart)
@@ -115,6 +123,73 @@ export default function Charts() {
         ],
       });
     }
+
+    // Branch-Level Performance Overview
+    const branchNames = licensureExamsData.map((branch) => branch.branch_name);
+    const firstTimeTakers = licensureExamsData.map((branch) =>
+      branch.series
+        .find((series) => series.name === 'First Time Takers')
+        .data.reduce((sum, value) => sum + value, 0)
+    );
+    const passed = licensureExamsData.map((branch) =>
+      branch.series
+        .find((series) => series.name === 'Passed')
+        .data.reduce((sum, value) => sum + value, 0)
+    );
+
+    setLicensureBranchPerformance({
+      categories: branchNames,
+      series: [
+        { name: 'First Time Takers', data: firstTimeTakers },
+        { name: 'Passed', data: passed },
+      ],
+    });
+
+    // Program-Level Passing Rates (Per Branch)
+    const programRates = licensureExamsData.map((branch) => {
+      return {
+        branch: branch.branch_name,
+        data: branch.categories.map((program, index) => ({
+          name: program,
+          passingRate: branch.series
+            .find((series) => series.name === 'Passing Rate')
+            .data[index].toFixed(2),
+        })),
+      };
+    });
+    setProgramPassingRates(programRates);
+
+    // Program Comparison per Branch
+    // Extract unique programs from all branches
+    // and create a comparison data structure
+    // for each program across branches
+
+    const uniquePrograms = [
+      ...new Set(licensureExamsData.flatMap((branch) => branch.categories)),
+    ];
+    const comparisonData = uniquePrograms.map((program) => {
+      const branches = licensureExamsData.map((branch) => {
+        const programIndex = branch.categories.indexOf(program);
+        if (programIndex !== -1) {
+          return branch.series.find((series) => series.name === 'Passing Rate')
+            .data[programIndex];
+        }
+        return 0;
+      });
+      return { program, branches };
+    });
+    setProgramComparisonData(comparisonData);
+
+    // Efficiency Snapshot
+    const efficiencyData = licensureExamsData.flatMap((branch) =>
+      branch.categories.map((program, index) => ({
+        program,
+        passingRate: branch.series
+          .find((series) => series.name === 'Passing Rate')
+          .data[index].toFixed(2),
+      }))
+    );
+    setEfficiencySnapshotData(efficiencyData);
   }, []);
 
   const branchOverviewOptions = {
@@ -204,6 +279,81 @@ export default function Charts() {
     },
   };
 
+  const licensureBranchOptions = {
+    chart: {
+      type: 'bar',
+      stacked: false,
+      height: 350,
+    },
+    xaxis: {
+      categories: licensureBranchPerformance.categories,
+    },
+    plotOptions: {
+      bar: {
+        horizontal: false,
+      },
+    },
+    fill: {
+      colors: ['#660033', '#FBBF24'],
+    },
+  };
+
+  const programPassingOptions = (categories) => ({
+    chart: {
+      type: 'bar',
+      height: 350,
+    },
+    xaxis: {
+      categories,
+    },
+    plotOptions: {
+      bar: {
+        horizontal: true,
+      },
+    },
+    fill: {
+      colors: ['#660033', '#FBBF24'],
+    },
+    dataLabels: {
+      enabled: true,
+    },
+  });
+
+  const programComparisonOptions = {
+    chart: {
+      type: 'bar',
+      height: 350,
+      stacked: true,
+    },
+    xaxis: {
+      categories: ['Boac', 'Gasan', 'Torrijos'],
+    },
+    fill: {
+      colors: ['#660033', '#FBBF24'],
+    },
+    plotOptions: {
+      bar: {
+        horizontal: true,
+      },
+      legend: {
+        show: true,
+        position: 'top',
+        horizontalAlign: 'left',
+        floating: true,
+      },
+    },
+  };
+
+  const efficiencySnapshotOptions = {
+    chart: {
+      type: 'donut',
+      height: 350,
+    },
+    fill: {
+      colors: ['#660033', '#FBBF24'],
+    },
+  };
+
   return (
     <div className='w-full '>
       {/* Branch-Level Overview */}
@@ -266,6 +416,69 @@ export default function Charts() {
           options={boacTop6Options}
           series={boacTop6Data.series}
           type='bar'
+          height={350}
+        />
+      </div> */}
+
+      {/* Branch-Level Performance Overview */}
+      <div className='mb-12'>
+        <h2 className='text-md font-bold mb-4'>
+          Licensure Exams Branch-Level Performance
+        </h2>
+        <Chart
+          options={licensureBranchOptions}
+          series={licensureBranchPerformance.series}
+          type='bar'
+          height={350}
+        />
+      </div>
+
+      {/* Program-Level Passing Rates */}
+      {programPassingRates.map((branchData, index) => (
+        <div key={index} className='mb-12'>
+          <h2 className='text-md font-bold mb-4'>
+            Program Passing Rates - {branchData.branch}
+          </h2>
+          <Chart
+            options={programPassingOptions(branchData.data.map((d) => d.name))}
+            series={[
+              {
+                name: 'Passing Rate',
+                data: branchData.data.map((d) => parseFloat(d.passingRate)),
+              },
+            ]}
+            type='bar'
+            height={350}
+          />
+        </div>
+      ))}
+
+      {/* Program Comparison Across Branches */}
+      <div className='mb-12'>
+        <h2 className='text-md font-bold mb-4'>
+          Program Comparison Across Branches
+        </h2>
+        <Chart
+          options={programComparisonOptions}
+          series={programComparisonData.map((data) => ({
+            name: data.program,
+            data: data.branches,
+          }))}
+          type='bar'
+          height={350}
+        />
+      </div>
+
+      {/* Efficiency Snapshot */}
+      {/* <div className='mb-12'>
+        <h2 className='text-md font-bold mb-4'>Efficiency Snapshot</h2>
+        <Chart
+          options={efficiencySnapshotOptions}
+          series={efficiencySnapshotData.map((data) => ({
+            name: data.program,
+            data: [parseFloat(data.passingRate)],
+          }))}
+          type='donut'
           height={350}
         />
       </div> */}

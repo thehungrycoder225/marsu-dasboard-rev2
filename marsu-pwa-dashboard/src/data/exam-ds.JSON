@@ -1,74 +1,59 @@
-{
-  "examResults": [
-    {
-      "campus": "Main Campus",
-      "program": "Bachelor of Science in Nursing",
-      "date": "May & November 2023",
-      "firstTimeTakers": 90,
-      "firstTimePassers": 86
-    },
-    {
-      "campus": "Main Campus",
-      "program": "Bachelor of Science in Social Work",
-      "date": "September 2023",
-      "firstTimeTakers": 52,
-      "firstTimePassers": 37
-    },
-    {
-      "campus": "Main Campus",
-      "program": "Bachelor of Science in Electrical Engineering",
-      "date": "April & September 2023",
-      "firstTimeTakers": 26,
-      "firstTimePassers": 20
-    },
-    {
-      "campus": "Main Campus",
-      "program": "Bachelor of Science in Electronics Engineering",
-      "date": "April & October 2023",
-      "firstTimeTakers": 18,
-      "firstTimePassers": 5
-    },
-    {
-      "campus": "Main Campus",
-      "program": "Bachelor of Science in Civil Engineering",
-      "date": "April & November 2023",
-      "firstTimeTakers": 119,
-      "firstTimePassers": 57
-    },
-    {
-      "campus": "Main Campus",
-      "program": "Bachelor of Science in Mechanical Engineering",
-      "date": "February & August 2023",
-      "firstTimeTakers": 16,
-      "firstTimePassers": 15
-    },
-    {
-      "campus": "Main Campus",
-      "program": "Bachelor of Secondary Education",
-      "date": "March & September 2023",
-      "firstTimeTakers": 101,
-      "firstTimePassers": 86
-    },
-    {
-      "campus": "Main Campus",
-      "program": "Bachelor of Elementary Education",
-      "date": "March & September 2023",
-      "firstTimeTakers": 23,
-      "firstTimePassers": 23
-    },
-    {
-      "campus": "Campus 2 (GASAN CAMPUS-Banuyo, Gasan, Marinduque)",
-      "program": "Bachelor of Science in Fisheries",
-      "date": "October 2023",
-      "firstTimeTakers": 7,
-      "firstTimePassers": 4
-    },
-    {
-      "campus": "Campus 4 (TORRIJOS CAMPUS-Poctoy, Torrijos, Marinduque)",
-      "program": "Bachelor of Science in Agriculture",
-      "date": "November 2023",
-      "firstTimeTakers": 16,
-      "firstTimePassers": 11
-    }
-  ]
-}
+[
+  {
+    "branch_id": 1,
+    "branch_name": "Boac",
+    "year": 2023,
+    "categories": [
+      "Nursing",
+      "Social Work",
+      "Electrical Engineering",
+      "Electronics Engineering",
+      "Civil Engineering",
+      "Mechanical Engineering",
+      "Secondary Education",
+      "Elementary Education"
+    ],
+    "series": [
+      {
+        "name": "First Time Takers",
+        "data": [90, 52, 26, 18, 119, 16, 101, 23]
+      },
+      {
+        "name": "Passing Rate",
+        "data": [86, 37, 20, 5, 57, 15, 86, 23]
+      }
+    ]
+  },
+  {
+    "branch_id": 2,
+    "branch_name": "Gasan",
+    "year": 2023,
+    "categories": ["Fisheries"],
+    "series": [
+      {
+        "name": "First Time Takers",
+        "data": [7]
+      },
+      {
+        "name": "Passing Rate",
+        "data": [4]
+      }
+    ]
+  },
+  {
+    "branch_id": 4,
+    "branch_name": "Torrijos",
+    "year": 2023,
+    "categories": ["Agriculture"],
+    "series": [
+      {
+        "name": "First Time Takers",
+        "data": [16]
+      },
+      {
+        "name": "Passing Rate",
+        "data": [11]
+      }
+    ]
+  }
+]

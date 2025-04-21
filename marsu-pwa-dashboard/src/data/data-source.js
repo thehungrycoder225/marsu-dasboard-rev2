@@ -149,24 +149,69 @@ export const licensureExamsData = [
   {
     branch_id: 1,
     branch_name: 'Boac',
+    year: 2023,
     categories: [
-      'Civil Engineering',
+      'Nursing',
+      'Social Work',
       'Electrical Engineering',
       'Electronics Engineering',
+      'Civil Engineering',
       'Mechanical Engineering',
-      'Agricultural Engineering',
-      'Accountancy',
-      'Nursing',
-      'Midwifery',
+      'Secondary Education',
+      'Elementary Education',
     ],
     series: [
       {
-        name: 'Priority Program',
-        data: [431, 144, 161, 94, 161, 1673, 729, 248],
+        name: 'First Time Takers',
+        data: [90, 52, 26, 18, 119, 16, 101, 23],
       },
       {
-        name: 'Non-Priority Program',
-        data: [null, null, null, null, null, null, null, null],
+        name: 'Passed',
+        data: [86, 37, 20, 5, 57, 15, 86, 23],
+      },
+      {
+        name: 'Passing Rate',
+        data: [95.56, 71.15, 76.92, 27.78, 47.86, 93.75, 85.15, 100],
+      },
+    ],
+  },
+  {
+    branch_id: 2,
+    branch_name: 'Gasan',
+    year: 2023,
+    categories: ['Fisheries'],
+    series: [
+      {
+        name: 'First Time Takers',
+        data: [7],
+      },
+      {
+        name: 'Passed',
+        data: [4],
+      },
+      {
+        name: 'Passing Rate',
+        data: [57.14],
+      },
+    ],
+  },
+  {
+    branch_id: 4,
+    branch_name: 'Torrijos',
+    year: 2023,
+    categories: ['Agriculture'],
+    series: [
+      {
+        name: 'First Time Takers',
+        data: [16],
+      },
+      {
+        name: 'Passed',
+        data: [11],
+      },
+      {
+        name: 'Passing Rate',
+        data: [68.75],
       },
     ],
   },
