@@ -16,14 +16,25 @@ export default defineConfig({
         skipWaiting: true,
         cleanupOutdatedCaches: true,
         sourcemap: true,
-
         globPatterns: ['**/*.{js,css,html,svg,png,ico}'],
+        // enable offline runtime
         runtimeCaching: [
           {
-            urlPattern: ({ request }) => request.destination === 'document',
+            urlPattern: ({ request }) => request.destination === 'image',
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'images',
+              expiration: {
+                maxEntries: 50,
+                maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days
+              },
+            },
+          },
+          {
+            urlPattern: ({ request }) => request.destination === 'script',
             handler: 'NetworkFirst',
             options: {
-              cacheName: 'documents',
+              cacheName: 'scripts',
               expiration: {
                 maxEntries: 50,
                 maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days
@@ -42,6 +53,18 @@ export default defineConfig({
         name: 'MarSU Dashboard',
         short_name: 'MarSU Dashboard',
         description: 'MarSU Dashboard',
+        icons: [
+          {
+            src: 'pwa-192x192.png',
+            sizes: '192x192',
+            type: 'image/png',
+          },
+          {
+            src: 'pwa-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+          },
+        ],
       },
 
       devOptions: {
