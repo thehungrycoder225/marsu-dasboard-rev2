@@ -112,6 +112,29 @@ export const useChartData = () => {
           .data.reduce((sum, value) => sum + value, 0)
       );
 
+      const licensurePerformancePerCategory = licensureExamsData.map(
+        (branch) => {
+          const { branch_name: branchName, categories, series } = branch;
+
+          const formattedData = categories.map((program, index) => {
+            const getSeriesData = (name) =>
+              series.find((s) => s.name === name)?.data[index] || 0;
+
+            return {
+              x: program,
+              y: parseFloat(getSeriesData('Passing Rate').toFixed(2)),
+              firstTimeTakers: getSeriesData('First Time Takers'),
+              passed: getSeriesData('Passed'),
+            };
+          });
+
+          return {
+            branch: branchName,
+            data: formattedData,
+          };
+        }
+      );
+
       const licensureBranchPerformance = {
         categories: branchNames,
         series: [
@@ -122,11 +145,18 @@ export const useChartData = () => {
 
       const programPassingRates = licensureExamsData.map((branch) => ({
         branch: branch.branch_name,
-        data: branch.categories.map((program, index) => ({
-          name: program,
-          passingRate: branch.series
-            .find((series) => series.name === 'Passing Rate')
-            .data[index].toFixed(2),
+
+        data: branch.categories.map((category, index) => ({
+          name: category,
+          passingRate: branch.series.find(
+            (series) => series.name === 'Passing Rate'
+          ).data[index],
+          firstTimeTakers: branch.series.find(
+            (series) => series.name === 'First Time Takers'
+          ).data[index],
+          passed: branch.series.find((series) => series.name === 'Passed').data[
+            index
+          ],
         })),
       }));
 
@@ -146,6 +176,7 @@ export const useChartData = () => {
 
       return {
         licensureBranchPerformance,
+        licensurePerformancePerCategory,
         programPassingRates,
         programComparison,
       };
@@ -165,7 +196,7 @@ export const useChartOptions = () =>
         chart: { type: 'bar', height: 350, stacked },
         xaxis: { categories },
         plotOptions: { bar: { horizontal } },
-        fill: { colors: ['#660033', '#FBBF24'] },
+        fill: { colors: ['#660033', '#FBBF24', '#323232'] },
       }),
       treemap: {
         chart: { type: 'treemap', height: 350 },

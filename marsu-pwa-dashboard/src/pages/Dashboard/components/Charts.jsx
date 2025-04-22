@@ -68,7 +68,8 @@ export default function Charts() {
 
       <div className='mb-12'>
         <h2 className='text-md font-bold mb-4'>
-          Program Comparison Across Branches
+          Comparison Across Different Programs on Passing Rate, Firstime Takers
+          and Passed
         </h2>
         <Chart
           options={chartOptions.bar(['Boac', 'Gasan', 'Torrijos'], true, true)}

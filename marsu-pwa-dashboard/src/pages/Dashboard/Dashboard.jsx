@@ -51,6 +51,49 @@ function Dashboard() {
               </div>
             ))}
           </div>
+          <div className='mx-auto max-w-2xl lg:mx-0 lg:max-w-none'>
+            <h2>Licensure Exams Performance Statistics </h2>
+            <Chart
+              options={chartOptions.bar(
+                chartData.licensureBranchPerformance.categories
+              )}
+              series={chartData.licensureBranchPerformance.series}
+              type='bar'
+              height={350}
+            />
+          </div>
+          {chartData.programPassingRates.map((branchData, index) => (
+            <div key={index} className='mb-12'>
+              <h2 className='text-md font-bold mb-4'>
+                Program Passing Rates - {branchData.branch}
+              </h2>
+              <Chart
+                options={chartOptions.bar(
+                  // aggregate the program names from the data regardless of the branch
+                  branchData.data.map((d) => d.name),
+                  false,
+                  false
+                )}
+                series={[
+                  // {
+                  //   name: 'First Time Takers',
+                  //   // sort from highest to lowest
+                  //   data: branchData.data.map((d) => d.firstTimeTakers),
+                  // },
+                  // {
+                  //   name: 'Passed',
+                  //   data: branchData.data.map((d) => d.passed),
+                  // },
+                  {
+                    name: 'Passing Rate',
+                    data: branchData.data.map((d) => parseFloat(d.passingRate)),
+                  },
+                ]}
+                type='bar'
+                height={350}
+              />
+            </div>
+          ))}
         </div>
       </div>
     </div>
