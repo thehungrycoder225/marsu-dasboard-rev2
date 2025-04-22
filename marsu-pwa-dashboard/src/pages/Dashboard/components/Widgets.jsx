@@ -27,7 +27,7 @@ function CardWidget({ title, children }) {
     {
       id: 1,
       branch: 'Boac',
-      total: 7359,
+      total: 7321,
       academicYear: '2023-2024',
       iconType: BuildingLibraryIcon,
     },

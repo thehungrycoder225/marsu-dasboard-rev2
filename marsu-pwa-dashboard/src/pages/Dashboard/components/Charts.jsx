@@ -1,446 +1,59 @@
 import Chart from 'react-apexcharts';
-import { useState, useEffect } from 'react';
-import { enrollmentData, licensureExamsData } from '../../../data/data-source';
+import { useChartData, useChartOptions } from '../../../hooks/dataHooks';
 
 export default function Charts() {
-  const [branchOverviewData, setBranchOverviewData] = useState({
-    categories: [],
-    series: [],
-  });
-  const [programDrilldownData, setProgramDrilldownData] = useState([]);
-  const [crossBranchData, setCrossBranchData] = useState([]);
-  const [heatmapData, setHeatmapData] = useState({
-    categories: [],
-    series: [],
-  });
-  const [boacTop6Data, setBoacTop6Data] = useState({
-    categories: [],
-    series: [],
-  });
-
-  const [licensureBranchPerformance, setLicensureBranchPerformance] = useState({
-    categories: [],
-    series: [],
-  });
-  const [programPassingRates, setProgramPassingRates] = useState([]);
-  const [programComparisonData, setProgramComparisonData] = useState([]);
-  const [efficiencySnapshotData, setEfficiencySnapshotData] = useState([]);
-
-  useEffect(() => {
-    // Process data for Branch-Level Overview (Stacked Bar Chart)
-    const branches = enrollmentData.map((branch) => branch.branch_name);
-    const priorityData = enrollmentData.map((branch) =>
-      branch.series[0].data.reduce((sum, value) => sum + (value || 0), 0)
-    );
-    const nonPriorityData = enrollmentData.map((branch) =>
-      branch.series[1].data.reduce((sum, value) => sum + (value || 0), 0)
-    );
-
-    setBranchOverviewData({
-      categories: branches,
-      series: [
-        { name: 'Priority Program', data: priorityData },
-        { name: 'Non-Priority Program', data: nonPriorityData },
-      ],
-    });
-
-    // Process data for Program-Level Drilldown (Grouped Bar Chart per branch)
-    const drilldownData = enrollmentData.map((branch) => ({
-      branchName: branch.branch_name,
-      categories: branch.categories,
-      series: branch.series.map((s) => ({
-        name: s.name,
-        data: s.data.map((value) => value || 0),
-      })),
-    }));
-
-    setProgramDrilldownData(drilldownData);
-
-    // Process data for Cross-Branch Program Popularity (Treemap)
-    const programPopularity = {};
-    enrollmentData.forEach((branch) => {
-      branch.categories.forEach((category, index) => {
-        if (!programPopularity[category]) {
-          programPopularity[category] = 0;
-        }
-        programPopularity[category] += branch.series[0].data[index] || 0;
-        programPopularity[category] += branch.series[1].data[index] || 0;
-      });
-    });
-
-    const treemapData = Object.entries(programPopularity).map(
-      ([name, value]) => ({
-        x: name,
-        y: value,
-      })
-    );
-
-    setCrossBranchData(treemapData);
-
-    // Process data for Heatmap
-    const heatmapCategories = enrollmentData.map(
-      (branch) => branch.branch_name
-    );
-    const heatmapSeries = enrollmentData[0].categories.map(
-      (category, index) => ({
-        name: category,
-        data: enrollmentData.map(
-          (branch) =>
-            (branch.series[0].data[index] || 0) +
-            (branch.series[1].data[index] || 0)
-        ),
-      })
-    );
-
-    setHeatmapData({ categories: heatmapCategories, series: heatmapSeries });
-
-    // Process data for Boac Branch (Top 6 Categories)
-    const boacBranch = enrollmentData.find(
-      (branch) => branch.branch_name === 'Boac'
-    );
-    if (boacBranch) {
-      const top6Indices = boacBranch.series[0].data
-        .map((value, index) => ({ value: value || 0, index }))
-        .sort((a, b) => b.value - a.value)
-        .slice(0, 6)
-        .map((item) => item.index);
-
-      const top6Categories = top6Indices.map(
-        (index) => boacBranch.categories[index]
-      );
-      const top6PriorityData = top6Indices.map(
-        (index) => boacBranch.series[0].data[index] || 0
-      );
-      const top6NonPriorityData = top6Indices.map(
-        (index) => boacBranch.series[1].data[index] || 0
-      );
-
-      setBoacTop6Data({
-        categories: top6Categories,
-        series: [
-          { name: 'Priority Program', data: top6PriorityData },
-          { name: 'Non-Priority Program', data: top6NonPriorityData },
-        ],
-      });
-    }
-
-    // Branch-Level Performance Overview
-    const branchNames = licensureExamsData.map((branch) => branch.branch_name);
-    const firstTimeTakers = licensureExamsData.map((branch) =>
-      branch.series
-        .find((series) => series.name === 'First Time Takers')
-        .data.reduce((sum, value) => sum + value, 0)
-    );
-    const passed = licensureExamsData.map((branch) =>
-      branch.series
-        .find((series) => series.name === 'Passed')
-        .data.reduce((sum, value) => sum + value, 0)
-    );
-
-    setLicensureBranchPerformance({
-      categories: branchNames,
-      series: [
-        { name: 'First Time Takers', data: firstTimeTakers },
-        { name: 'Passed', data: passed },
-      ],
-    });
-
-    // Program-Level Passing Rates (Per Branch)
-    const programRates = licensureExamsData.map((branch) => {
-      return {
-        branch: branch.branch_name,
-        data: branch.categories.map((program, index) => ({
-          name: program,
-          passingRate: branch.series
-            .find((series) => series.name === 'Passing Rate')
-            .data[index].toFixed(2),
-        })),
-      };
-    });
-    setProgramPassingRates(programRates);
-
-    // Program Comparison per Branch
-    // Extract unique programs from all branches
-    // and create a comparison data structure
-    // for each program across branches
-
-    const uniquePrograms = [
-      ...new Set(licensureExamsData.flatMap((branch) => branch.categories)),
-    ];
-    const comparisonData = uniquePrograms.map((program) => {
-      const branches = licensureExamsData.map((branch) => {
-        const programIndex = branch.categories.indexOf(program);
-        if (programIndex !== -1) {
-          return branch.series.find((series) => series.name === 'Passing Rate')
-            .data[programIndex];
-        }
-        return 0;
-      });
-      return { program, branches };
-    });
-    setProgramComparisonData(comparisonData);
-
-    // Efficiency Snapshot
-    const efficiencyData = licensureExamsData.flatMap((branch) =>
-      branch.categories.map((program, index) => ({
-        program,
-        passingRate: branch.series
-          .find((series) => series.name === 'Passing Rate')
-          .data[index].toFixed(2),
-      }))
-    );
-    setEfficiencySnapshotData(efficiencyData);
-  }, []);
-
-  const branchOverviewOptions = {
-    chart: {
-      type: 'bar',
-      stacked: true,
-      height: 350,
-    },
-    fill: {
-      colors: ['#660033', '#FBBF24'],
-    },
-    xaxis: {
-      categories: branchOverviewData.categories,
-    },
-    plotOptions: {
-      bar: {
-        horizontal: false,
-      },
-    },
-  };
-
-  const programDrilldownOptions = (categories) => ({
-    chart: {
-      type: 'bar',
-      height: 350,
-    },
-    xaxis: {
-      categories,
-    },
-    fill: {
-      colors: ['#660033', '#FBBF24'],
-    },
-    plotOptions: {
-      bar: {
-        horizontal: true,
-      },
-    },
-  });
-
-  const treemapOptions = {
-    chart: {
-      type: 'treemap',
-      height: 350,
-    },
-    legend: {
-      show: true,
-    },
-    fill: {
-      colors: ['#660033', '#FBBF24'],
-    },
-  };
-
-  const heatmapOptions = {
-    chart: {
-      type: 'heatmap',
-      height: 350,
-    },
-    xaxis: {
-      categories: heatmapData.categories,
-    },
-    dataLabels: {
-      enabled: false,
-    },
-    fill: {
-      colors: ['#660033', '#FBBF24'],
-    },
-  };
-
-  const boacTop6Options = {
-    chart: {
-      type: 'bar',
-      height: 350,
-    },
-    xaxis: {
-      categories: boacTop6Data.categories,
-    },
-    plotOptions: {
-      bar: {
-        horizontal: true,
-      },
-    },
-    fill: {
-      colors: ['#660033', '#FBBF24'],
-    },
-    dataLabels: {
-      enabled: true,
-    },
-  };
-
-  const licensureBranchOptions = {
-    chart: {
-      type: 'bar',
-      stacked: false,
-      height: 350,
-    },
-    xaxis: {
-      categories: licensureBranchPerformance.categories,
-    },
-    plotOptions: {
-      bar: {
-        horizontal: false,
-      },
-    },
-    fill: {
-      colors: ['#660033', '#FBBF24'],
-    },
-  };
-
-  const programPassingOptions = (categories) => ({
-    chart: {
-      type: 'bar',
-      height: 350,
-    },
-    xaxis: {
-      categories,
-    },
-    plotOptions: {
-      bar: {
-        horizontal: true,
-      },
-    },
-    fill: {
-      colors: ['#660033', '#FBBF24'],
-    },
-    dataLabels: {
-      enabled: true,
-    },
-  });
-
-  const programComparisonOptions = {
-    chart: {
-      type: 'bar',
-      height: 350,
-      stacked: true,
-    },
-    xaxis: {
-      categories: ['Boac', 'Gasan', 'Torrijos'],
-    },
-    fill: {
-      colors: ['#660033', '#FBBF24'],
-    },
-    plotOptions: {
-      bar: {
-        horizontal: true,
-      },
-      legend: {
-        show: true,
-        position: 'top',
-        horizontalAlign: 'left',
-        floating: true,
-      },
-    },
-  };
-
-  const efficiencySnapshotOptions = {
-    chart: {
-      type: 'donut',
-      height: 350,
-    },
-    fill: {
-      colors: ['#660033', '#FBBF24'],
-    },
-  };
+  const chartData = useChartData();
+  const chartOptions = useChartOptions();
 
   return (
-    <div className='w-full '>
-      {/* Branch-Level Overview */}
+    <div className='w-full'>
       <div className='mb-12'>
-        <h2 className='text-md font-bold mb-4'> Overview</h2>
+        <h2 className='text-md font-bold mb-4'>Overview</h2>
         <Chart
-          options={branchOverviewOptions}
-          series={branchOverviewData.series}
+          options={chartOptions.bar(chartData.branchOverview.categories, true)}
+          series={chartData.branchOverview.series}
           type='bar'
           height={350}
         />
       </div>
-      {/* Cross-Branch Program Popularity */}
+
       <div className='mb-12'>
         <h2 className='text-md font-bold mb-4'>
           Cross-Branch Program Popularity
         </h2>
         <Chart
-          options={treemapOptions}
-          series={[{ data: crossBranchData }]}
+          options={chartOptions.treemap}
+          series={[{ data: chartData.crossBranch }]}
           type='treemap'
           height={350}
         />
       </div>
 
-      <div className='mt-6 grid grid-cols-1 gap-x-6 gap-y-8 lg:grid-cols-2 xl:gap-x-8'>
-        {/* Program-Level Drilldown */}
-        {programDrilldownData.map((chart, index) => (
-          <div key={index} className='mb-12'>
-            <h2 className='text-md font-bold mb-4'>
-              Branch: {chart.branchName}
-            </h2>
-            <Chart
-              options={programDrilldownOptions(chart.categories)}
-              series={chart.series}
-              type='bar'
-              height={350}
-            />
-          </div>
-        ))}
-      </div>
-
-      {/* Heatmap */}
-      {/* <div className='mb-12'>
-        <h2 className='text-md font-bold mb-4'>Program Heatmap</h2>
-        <Chart
-          options={heatmapOptions}
-          series={heatmapData.series}
-          type='heatmap'
-          height={350}
-        />
-      </div> */}
-
-      {/* Boac Branch Top 6 Categories */}
-      {/* <div className='mb-12'>
-        <h2 className='text-md font-bold mb-4'>
-          Boac Branch: Top 6 Categories
-        </h2>
-        <Chart
-          options={boacTop6Options}
-          series={boacTop6Data.series}
-          type='bar'
-          height={350}
-        />
-      </div> */}
-
-      {/* Branch-Level Performance Overview */}
       <div className='mb-12'>
         <h2 className='text-md font-bold mb-4'>
           Licensure Exams Branch-Level Performance
         </h2>
         <Chart
-          options={licensureBranchOptions}
-          series={licensureBranchPerformance.series}
+          options={chartOptions.bar(
+            chartData.licensureBranchPerformance.categories
+          )}
+          series={chartData.licensureBranchPerformance.series}
           type='bar'
           height={350}
         />
       </div>
 
-      {/* Program-Level Passing Rates */}
-      {programPassingRates.map((branchData, index) => (
+      {chartData.programPassingRates.map((branchData, index) => (
         <div key={index} className='mb-12'>
           <h2 className='text-md font-bold mb-4'>
             Program Passing Rates - {branchData.branch}
           </h2>
           <Chart
-            options={programPassingOptions(branchData.data.map((d) => d.name))}
+            options={chartOptions.bar(
+              branchData.data.map((d) => d.name),
+              false,
+              true
+            )}
             series={[
               {
                 name: 'Passing Rate',
@@ -453,14 +66,13 @@ export default function Charts() {
         </div>
       ))}
 
-      {/* Program Comparison Across Branches */}
       <div className='mb-12'>
         <h2 className='text-md font-bold mb-4'>
           Program Comparison Across Branches
         </h2>
         <Chart
-          options={programComparisonOptions}
-          series={programComparisonData.map((data) => ({
+          options={chartOptions.bar(['Boac', 'Gasan', 'Torrijos'], true, true)}
+          series={chartData.programComparison.map((data) => ({
             name: data.program,
             data: data.branches,
           }))}
@@ -468,20 +80,6 @@ export default function Charts() {
           height={350}
         />
       </div>
-
-      {/* Efficiency Snapshot */}
-      {/* <div className='mb-12'>
-        <h2 className='text-md font-bold mb-4'>Efficiency Snapshot</h2>
-        <Chart
-          options={efficiencySnapshotOptions}
-          series={efficiencySnapshotData.map((data) => ({
-            name: data.program,
-            data: [parseFloat(data.passingRate)],
-          }))}
-          type='donut'
-          height={350}
-        />
-      </div> */}
     </div>
   );
 }
