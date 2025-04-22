@@ -2,7 +2,11 @@ import Navigation from './components/Navigation';
 import DashboardHeader from './components/DashboardHeader';
 import CardWidget from './components/Widgets';
 import Chart from 'react-apexcharts';
-import { useChartData, useChartOptions } from '../../hooks/dataHooks';
+import {
+  useChartData,
+  useChartOptions,
+  renderLicensureExamsData,
+} from '../../hooks/dataHooks';
 
 function Dashboard() {
   const chartData = useChartData();
@@ -61,39 +65,18 @@ function Dashboard() {
               type='bar'
               height={350}
             />
+
+            <Chart
+              options={chartOptions.bar(
+                renderLicensureExamsData()[0].categories,
+                false,
+                false
+              )}
+              series={renderLicensureExamsData()[0].series}
+              type='bar'
+              height={350}
+            />
           </div>
-          {chartData.programPassingRates.map((branchData, index) => (
-            <div key={index} className='mb-12'>
-              <h2 className='text-md font-bold mb-4'>
-                Program Passing Rates - {branchData.branch}
-              </h2>
-              <Chart
-                options={chartOptions.bar(
-                  // aggregate the program names from the data regardless of the branch
-                  branchData.data.map((d) => d.name),
-                  false,
-                  false
-                )}
-                series={[
-                  // {
-                  //   name: 'First Time Takers',
-                  //   // sort from highest to lowest
-                  //   data: branchData.data.map((d) => d.firstTimeTakers),
-                  // },
-                  // {
-                  //   name: 'Passed',
-                  //   data: branchData.data.map((d) => d.passed),
-                  // },
-                  {
-                    name: 'Passing Rate',
-                    data: branchData.data.map((d) => parseFloat(d.passingRate)),
-                  },
-                ]}
-                type='bar'
-                height={350}
-              />
-            </div>
-          ))}
         </div>
       </div>
     </div>

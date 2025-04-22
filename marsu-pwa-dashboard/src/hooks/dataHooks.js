@@ -205,3 +205,54 @@ export const useChartOptions = () =>
     }),
     []
   );
+
+export const aggregateLicensureExamsData = () => {
+  const groupedData = {};
+
+  licensureExamsData.forEach(({ year, categories, series }) => {
+    if (!groupedData[year]) {
+      groupedData[year] = {
+        categories: [],
+        series: [],
+      };
+    }
+
+    categories.forEach((category, index) => {
+      const firstTimeTakers =
+        series.find((s) => s.name === 'First Time Takers')?.data[index] || 0;
+      const passingRate =
+        series.find((s) => s.name === 'Passing Rate')?.data[index] || 0;
+      const passed = series.find((s) => s.name === 'Passed')?.data[index] || 0;
+      groupedData[year].categories.push(category);
+      groupedData[year].series.push({ firstTimeTakers, passingRate, passed });
+    });
+  });
+
+  return groupedData;
+};
+
+export const renderLicensureExamsData = () => {
+  const aggregatedData = aggregateLicensureExamsData();
+  const chartData = Object.entries(aggregatedData).map(([year, data]) => {
+    return {
+      year,
+      categories: data.categories,
+      series: [
+        {
+          name: 'First Time Takers',
+          data: data.series.map((d) => d.firstTimeTakers || 0),
+        },
+        {
+          name: 'Passed',
+          data: data.series.map((d) => d.passed || 0),
+        },
+        {
+          name: 'Passing Rate',
+          data: data.series.map((d) => d.passingRate || 0),
+        },
+      ],
+    };
+  });
+
+  return chartData;
+};

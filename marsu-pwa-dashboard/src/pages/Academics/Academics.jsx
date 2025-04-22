@@ -1,4 +1,5 @@
 import ApplicationHeader from '../../components/ApplicationHeader';
+import { renderLicensureExamsData } from '../../hooks/dataHooks';
 
 function AcademicsPage() {
   return (
