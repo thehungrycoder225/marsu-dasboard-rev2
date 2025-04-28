@@ -1,505 +1,881 @@
 [
   {
-    "Research Title": "Lived Experiences of Selected MSMEs on Technological Assistance",
-    "Name of Faculty Researcher / Author": "Michael V. Capiña",
-    "Status of Research": "Completed",
-    "Duration of Research": {
-      "Date Started": "Sep-25-22",
-      "Date of Completion": "Jan-25-23"
+    "_id": "1",
+    "researchTitle": "Lived Experiences of Selected MSMEs on Technological Assistance",
+    "facultyResearchers": ["Michael V. Capiña"],
+    "status": "Completed",
+    "duration": {
+      "startDate": "2022-09-25",
+      "completionDate": "2023-01-25"
     },
-    "Title of Forum": "2023 International Conference on Sustainable Agri-vironment Education, Entrepreneurship, and Community Development (ICSAVED)",
-    "Venue": "Mariano Marcos State University",
-    "Forum Type": "International",
-    "Date of Presentation": "March 14-17, 2023",
-    "Product Name / Methods / Process / Technology": "Micro-enterprise Development Training"
+    "forum": {
+      "title": "2023 International Conference on Sustainable Agri-vironment Education, Entrepreneurship, and Community Development (ICSAVED)",
+      "venue": "Mariano Marcos State University",
+      "type": "International",
+      "presentationDate": "2023-03-14"
+    },
+    "product": "Micro-enterprise Development Training",
+    "category": "Technology Assistance",
+    "keywords": ["MSMEs", "Technological Assistance", "Training"],
+    "fundingSource": "Government",
+    "impactMetrics": {
+      "beneficiaries": 50,
+      "citations": 10
+    }
   },
   {
-    "Research Title": "Tracer Study of Diploma in Midwifery Graduates in the Marinduque State College from 2006-2022",
-    "Name of Faculty Researcher / Author": "Abegail O. Magcamit",
-    "Status of Research": "Completed",
-    "Duration of Research": {
-      "Date Started": "Oct-01-22",
-      "Date of Completion": "Mar-01-23"
+    "_id": "2",
+    "researchTitle": "Tracer Study of Diploma in Midwifery Graduates in the Marinduque State College from 2006-2022",
+    "facultyResearchers": ["Abegail O. Magcamit"],
+    "status": "Completed",
+    "duration": {
+      "startDate": "2022-10-01",
+      "completionDate": "2023-03-01"
     },
-    "Title of Forum": "35th APSOM Annual Convention – Association of Philippine Schools of Midwifery, Inc",
-    "Venue": "Century Park Hotel, Malate, Manila",
-    "Forum Type": "National",
-    "Date of Presentation": "April 19-20, 2023",
-    "Product Name / Methods / Process / Technology": "Technology Forum and Workshop on New Trends in Agribusiness for Federation of Mogpog Association"
+    "forum": {
+      "title": "35th APSOM Annual Convention – Association of Philippine Schools of Midwifery, Inc",
+      "venue": "Century Park Hotel, Malate, Manila",
+      "type": "National",
+      "presentationDate": "2023-04-19"
+    },
+    "product": "Technology Forum and Workshop on New Trends in Agribusiness for Federation of Mogpog Association",
+    "category": "Tracer Study",
+    "keywords": ["Midwifery", "Tracer Study", "Graduates"],
+    "fundingSource": "School",
+    "impactMetrics": {
+      "beneficiaries": 100,
+      "citations": 5
+    }
   },
   {
-    "Research Title": "Level of Satisfaction in Maternal and Child Health Care Services of the BEmONC Facility as perceived by parents in Ten Barangays of Buenavista, Marinduque, Philippines",
-    "Name of Faculty Researcher / Author": "Divina R. Vitto",
-    "Status of Research": "Completed",
-    "Duration of Research": {
-      "Date Started": "Mar-01-22",
-      "Date of Completion": "Mar-02-23"
+    "_id": "3",
+    "researchTitle": "Level of Satisfaction in Maternal and Child Health Care Services of the BEmONC Facility as perceived by parents in Ten Barangays of Buenavista, Marinduque, Philippines",
+    "facultyResearchers": ["Divina R. Vitto"],
+    "status": "Completed",
+    "duration": {
+      "startDate": "2022-03-01",
+      "completionDate": "2023-03-02"
     },
-    "Title of Forum": "35th APSOM Annual Convention – Association of Philippine Schools of Midwifery, Inc",
-    "Venue": "Century Park Hotel, Malate, Manila",
-    "Forum Type": "National",
-    "Date of Presentation": "April 19-20, 2023",
-    "Product Name / Methods / Process / Technology": "Seminar on the Conservation and Protection of Freshwater Prawns (Macrobrachium spp.)"
+    "forum": {
+      "title": "35th APSOM Annual Convention – Association of Philippine Schools of Midwifery, Inc",
+      "venue": "Century Park Hotel, Malate, Manila",
+      "type": "National",
+      "presentationDate": "2023-04-19"
+    },
+    "product": "Seminar on the Conservation and Protection of Freshwater Prawns (Macrobrachium spp.)",
+    "category": "Health Care Services",
+    "keywords": ["Maternal Care", "Child Health", "Health Services"],
+    "fundingSource": "Local Government",
+    "impactMetrics": {
+      "beneficiaries": 200,
+      "citations": 8
+    }
   },
   {
-    "Research Title": "Training Needs Assessment of Barangay Officials in the Municipalities of Torrijos and Buenavista, Marinduque",
-    "Name of Faculty Researcher / Author": [
+    "_id": "4",
+    "researchTitle": "Training Needs Assessment of Barangay Officials in the Municipalities of Torrijos and Buenavista, Marinduque",
+    "facultyResearchers": [
       "Joy R. Profugo",
       "Wilmer L. Imperio",
       "Neil Ryan P. Rodil"
     ],
-    "Status of Research": "Completed",
-    "Duration of Research": {
-      "Date Started": "Nov-01-22",
-      "Date of Completion": "Apr-01-23"
+    "status": "Completed",
+    "duration": {
+      "startDate": "2022-11-01",
+      "completionDate": "2023-04-01"
     },
-    "Title of Forum": "6th International Conference in Research, Education, Management, and the Social Sciences",
-    "Venue": "Crown Legacy Hotel, Baguio City",
-    "Forum Type": "International",
-    "Date of Presentation": "April 15-17, 2023",
-    "Product Name / Methods / Process / Technology": "Rapid Assessment of Cave"
+    "forum": {
+      "title": "6th International Conference in Research, Education, Management, and the Social Sciences",
+      "venue": "Crown Legacy Hotel, Baguio City",
+      "type": "International",
+      "presentationDate": "2023-04-15"
+    },
+    "product": "Rapid Assessment of Cave",
+    "category": "Training Needs Assessment",
+    "keywords": ["Barangay Officials", "Training Needs", "Assessment"],
+    "fundingSource": "NGO",
+    "impactMetrics": {
+      "beneficiaries": 75,
+      "citations": 12
+    }
   },
   {
-    "Research Title": "Evaluating Resident Satisfaction with Tourism Promotion Program in Barangay Pili, Mogpog, Marinduque: Implications to Local Tourism Management",
-    "Name of Faculty Researcher / Author": "Generoso E. Udanga",
-    "Status of Research": "Completed",
-    "Duration of Research": {
-      "Date Started": "Oct-16-22",
-      "Date of Completion": "Jan-15-23"
+    "_id": "5",
+    "researchTitle": "Evaluating Resident Satisfaction with Tourism Promotion Program in Barangay Pili, Mogpog, Marinduque: Implications to Local Tourism Management",
+    "facultyResearchers": ["Generoso E. Udanga"],
+    "status": "Completed",
+    "duration": {
+      "startDate": "2022-10-16",
+      "completionDate": "2023-01-15"
     },
-    "Title of Forum": "International Hospitality and Tourism Research  AMPAYAG: 1st International Conference",
-    "Venue": "Laoag City, Ilocos Norte",
-    "Forum Type": "International",
-    "Date of Presentation": "May 18-19, 2023",
-    "Product Name / Methods / Process / Technology": "Effective management of Marinduque Wildlife Sanctuary"
-  },
-  {
-    "Research Title": "Kaligtasan 2050: Emerging  Trends and Futures in Marinduque Safety and Security Scenario",
-    "Name of Faculty Researcher / Author": [
-      "Katrina E. De Mesa",
-      "Portia RZ. Hermosa"
+    "forum": {
+      "title": "International Hospitality and Tourism Research  AMPAYAG: 1st International Conference",
+      "venue": "Laoag City, Ilocos Norte",
+      "type": "International",
+      "presentationDate": "2023-05-18"
+    },
+    "product": "Effective management of Marinduque Wildlife Sanctuary",
+    "category": "Tourism",
+    "keywords": [
+      "Resident Satisfaction",
+      "Tourism Promotion",
+      "Local Tourism Management"
     ],
-    "Status of Research": "Completed",
-    "Duration of Research": {
-      "Date Started": "11/20/2023",
-      "Date of Completion": "4/20/2023"
-    },
-    "Title of Forum": "DLSU D National Conference on Technology and Research for National Development and Sustainability (TReNDS)",
-    "Venue": "DLSU Dasmarinas",
-    "Forum Type": "National",
-    "Date of Presentation": "May 24-26, 2023",
-    "Product Name / Methods / Process / Technology": "Entrepreneurial Mind Setting and Behavior Training"
+    "fundingSource": "Local Government",
+    "impactMetrics": {
+      "beneficiaries": 150,
+      "citations": 7
+    }
   },
   {
-    "Research Title": "CFD-Based Surface Runoff Simulation Model as a Tool for a Flood Control System",
-    "Name of Faculty Researcher / Author": "Rester JiNang",
-    "Status of Research": "Completed",
-    "Duration of Research": {
-      "Date Started": "11-15-2022",
-      "Date of Completion": "4-15-2023"
+    "_id": "6",
+    "researchTitle": "Kaligtasan 2050: Emerging  Trends and Futures in Marinduque Safety and Security Scenario",
+    "facultyResearchers": ["Katrina E. De Mesa", "Portia RZ. Hermosa"],
+    "status": "Completed",
+    "duration": {
+      "startDate": "2023-11-20",
+      "completionDate": "2023-04-20"
     },
-    "Title of Forum": "2nd International Conference on Climate Change Adaptation (CCA) and Disaster Risk Reduction Management (DRRM)",
-    "Venue": "Amari Don Muang Airport Hotel, Bangkok, Thailand.",
-    "Forum Type": "International",
-    "Date of Presentation": "May 29-June 2, 2023",
-    "Product Name / Methods / Process / Technology": "Capacity Building of Protected Area Management"
+    "forum": {
+      "title": "DLSU D National Conference on Technology and Research for National Development and Sustainability (TReNDS)",
+      "venue": "DLSU Dasmarinas",
+      "type": "National",
+      "presentationDate": "2023-05-24"
+    },
+    "product": "Entrepreneurial Mind Setting and Behavior Training",
+    "category": "Safety and Security",
+    "keywords": ["Safety", "Security", "Marinduque"],
+    "fundingSource": "Government",
+    "impactMetrics": {
+      "beneficiaries": 100,
+      "citations": 15
+    }
   },
   {
-    "Research Title": "Interpreting the Marinduque Provincial Government and Fisherfolks’ relation on development projects: Towards a policy of co-governance in public administration",
-    "Name of Faculty Researcher / Author": "Hilaron R. Elegado",
-    "Status of Research": "Completed",
-    "Duration of Research": {
-      "Date Started": "1/15/2023",
-      "Date of Completion": "1/5/2023"
+    "_id": "7",
+    "researchTitle": "CFD-Based Surface Runoff Simulation Model as a Tool for a Flood Control System",
+    "facultyResearchers": ["Rester JiNang"],
+    "status": "Completed",
+    "duration": {
+      "startDate": "2022-11-15",
+      "completionDate": "2023-04-15"
     },
-    "Title of Forum": "2023 Political Science Association International Conference",
-    "Venue": "Western Visayas State University",
-    "Forum Type": "International",
-    "Date of Presentation": "June 7-8, 2023",
-    "Product Name / Methods / Process / Technology": "Capacity Building Training Start Up Success: Nurturing an Entrepreneurial Mindset and Embodying Core Values"
+    "forum": {
+      "title": "2nd International Conference on Climate Change Adaptation (CCA) and Disaster Risk Reduction Management (DRRM)",
+      "venue": "Amari Don Muang Airport Hotel, Bangkok, Thailand.",
+      "type": "International",
+      "presentationDate": "2023-05-29"
+    },
+    "product": "Capacity Building of Protected Area Management",
+    "category": "Climate Change",
+    "keywords": ["CFD-Based Surface Runoff", "Flood Control", "Climate Change"],
+    "fundingSource": "International Agency",
+    "impactMetrics": {
+      "beneficiaries": 200,
+      "citations": 20
+    }
   },
   {
-    "Research Title": "The Perceived Impact of Legislative Actions taken by the Sangguniang Bayan of Sta. Cruz, Marinduque",
-    "Name of Faculty Researcher / Author": [
-      "Anne Grace M. Labatete",
-      "Wilmer L. Imperio"
+    "_id": "8",
+    "researchTitle": "Interpreting the Marinduque Provincial Government and Fisherfolks’ relation on development projects: Towards a policy of co-governance in public administration",
+    "facultyResearchers": ["Hilaron R. Elegado"],
+    "status": "Completed",
+    "duration": {
+      "startDate": "2023-01-15",
+      "completionDate": "2023-01-05"
+    },
+    "forum": {
+      "title": "2023 Political Science Association International Conference",
+      "venue": "Western Visayas State University",
+      "type": "International",
+      "presentationDate": "2023-06-07"
+    },
+    "product": "Capacity Building Training Start Up Success: Nurturing an Entrepreneurial Mindset and Embodying Core Values",
+    "category": "Public Administration",
+    "keywords": [
+      "Co-governance",
+      "Public Administration",
+      "Development Projects"
     ],
-    "Status of Research": "Completed",
-    "Duration of Research": {
-      "Date Started": "2/20/2023",
-      "Date of Completion": "5/20/2023"
-    },
-    "Title of Forum": "2023 Political Science Association International Conference",
-    "Venue": "Western Visayas State University",
-    "Forum Type": "International",
-    "Date of Presentation": "June 7-8, 2023",
-    "Product Name / Methods / Process / Technology": "Capacitating Educators in Research and Challenge Areas"
+    "fundingSource": "Local Government",
+    "impactMetrics": {
+      "beneficiaries": 50,
+      "citations": 5
+    }
   },
   {
-    "Research Title": "Wildlife Awareness Educational Simulation Game",
-    "Name of Faculty Researcher / Author": [
+    "_id": "9",
+    "researchTitle": "The Perceived Impact of Legislative Actions taken by the Sangguniang Bayan of Sta. Cruz, Marinduque",
+    "facultyResearchers": ["Anne Grace M. Labatete", "Wilmer L. Imperio"],
+    "status": "Completed",
+    "duration": {
+      "startDate": "2023-02-20",
+      "completionDate": "2023-05-20"
+    },
+    "forum": {
+      "title": "2023 Political Science Association International Conference",
+      "venue": "Western Visayas State University",
+      "type": "International",
+      "presentationDate": "2023-06-07"
+    },
+    "product": "Capacitating Educators in Research and Challenge Areas",
+    "category": "Legislative Actions",
+    "keywords": ["Legislative Actions", "Sangguniang Bayan", "Impact Study"],
+    "fundingSource": "Local Government",
+    "impactMetrics": {
+      "beneficiaries": 75,
+      "citations": 10
+    }
+  },
+  {
+    "_id": "10",
+    "researchTitle": "Wildlife Awareness Educational Simulation Game",
+    "facultyResearchers": [
       "Doreena Joy C. Borja",
       "Darrel J. Nambio",
       "Elgemar M. Natal",
       "Jhon Rynel S. Tan"
     ],
-    "Status of Research": "Completed",
-    "Duration of Research": {
-      "Date Started": "5/1/2023",
-      "Date of Completion": "05/31/2023"
+    "status": "Completed",
+    "duration": {
+      "startDate": "2023-05-01",
+      "completionDate": "2023-05-31"
     },
-    "Title of Forum": "2nd International Computing and Information Sciences Conference",
-    "Venue": "Caraga State University, Butuan City",
-    "Forum Type": "International",
-    "Date of Presentation": "June 8-9, 2023",
-    "Product Name / Methods / Process / Technology": "Processing Production of Arrowroot Bagasse Pastries"
+    "forum": {
+      "title": "2nd International Computing and Information Sciences Conference",
+      "venue": "Caraga State University, Butuan City",
+      "type": "International",
+      "presentationDate": "2023-06-08"
+    },
+    "product": "Processing Production of Arrowroot Bagasse Pastries",
+    "category": "Educational Game",
+    "keywords": ["Wildlife Awareness", "Simulation Game", "Education"],
+    "fundingSource": "Private Sector",
+    "impactMetrics": {
+      "beneficiaries": 300,
+      "citations": 25
+    }
   },
   {
-    "Research Title": "Level of Satisfaction of the Residents of Brgy. Pili, Mogpog, Marinduque on Government Service Delivery",
-    "Name of Faculty Researcher / Author": [
-      "Generoso E. Udanga",
-      "Abraham L. Cuevas"
+    "_id": "11",
+    "researchTitle": "Level of Satisfaction of the Residents of Brgy. Pili, Mogpog, Marinduque on Government Service Delivery",
+    "facultyResearchers": ["Generoso E. Udanga", "Abraham L. Cuevas"],
+    "status": "Completed",
+    "duration": {
+      "startDate": "2022-10-16",
+      "completionDate": "2023-01-15"
+    },
+    "forum": {
+      "title": "PSU BIMP-EAGA International Research Conference",
+      "venue": "City State Asturias Hotel, Puerto Princesa, Palawan",
+      "type": "International",
+      "presentationDate": "2023-02-09"
+    },
+    "product": "E-salba for Disaster and Health Risk Reduction",
+    "category": "Government Service Delivery",
+    "keywords": ["Service Delivery", "Resident Satisfaction", "Government"],
+    "fundingSource": "Local Government",
+    "impactMetrics": {
+      "beneficiaries": 120,
+      "citations": 6
+    }
+  },
+  {
+    "_id": "12",
+    "researchTitle": "Practices of the MSC ESL Teachers towards Online Assessment amidst the COVID-19 Pandemic",
+    "facultyResearchers": ["Marieneth L. Malubag"],
+    "status": "Completed",
+    "duration": {
+      "startDate": "2021-01-11",
+      "completionDate": "2022-05-03"
+    },
+    "forum": {
+      "title": "Linguistic Society of the Philippines International Conference 2022 & 21st English in Southeast Asia: A Joint Conference",
+      "venue": "University of Sto. Tomas – via Zoom",
+      "type": "International",
+      "presentationDate": "2022-03-10"
+    },
+    "product": "Online Assessment Practices",
+    "category": "Education",
+    "keywords": ["Online Assessment", "COVID-19 Pandemic", "Education"],
+    "fundingSource": "School",
+    "impactMetrics": {
+      "beneficiaries": 80,
+      "citations": 4
+    }
+  },
+  {
+    "_id": "13",
+    "researchTitle": "A Positioning Analysis on the Competing Roles of an ‘Academic’ ‘Mother’",
+    "facultyResearchers": ["Jholey Rose L. Lancion"],
+    "status": "Completed",
+    "duration": {
+      "startDate": "2021-05-11",
+      "completionDate": "2022-05-03"
+    },
+    "forum": {
+      "title": "Linguistic Society of the Philippines International Conference 2022 & 21st English in Southeast Asia: A Joint Conference",
+      "venue": "Practices of the MSC ESL Teachers towards Online Assessment amidst the COVID-19 Pandemic",
+      "type": "International",
+      "presentationDate": "2022-03-10"
+    },
+    "product": "Positioning Analysis",
+    "category": "Education",
+    "keywords": ["Positioning Analysis", "Academic Mother", "Education"],
+    "fundingSource": "School",
+    "impactMetrics": {
+      "beneficiaries": 60,
+      "citations": 3
+    }
+  },
+  {
+    "_id": "14",
+    "researchTitle": "The Position of Marinduque Tagalog in the Linguistic Landscape of the Heritage Town of Boac, Marinduque",
+    "facultyResearchers": ["Cherie Ann M. Luna"],
+    "status": "Completed",
+    "duration": {
+      "startDate": "2021-01-11",
+      "completionDate": "2022-05-03"
+    },
+    "forum": {
+      "title": "Linguistic Society of the Philippines International Conference 2022 & 21st English in Southeast Asia: A Joint Conference",
+      "venue": "University of Sto. Tomas – via Zoom",
+      "type": "International",
+      "presentationDate": "2022-03-10"
+    },
+    "product": "Linguistic Landscape Analysis",
+    "category": "Linguistics",
+    "keywords": ["Marinduque Tagalog", "Linguistic Landscape", "Linguistics"],
+    "fundingSource": "School",
+    "impactMetrics": {
+      "beneficiaries": 40,
+      "citations": 2
+    }
+  },
+  {
+    "_id": "15",
+    "researchTitle": "Meat Quality Markers Unveil the Markaduke Native Pig as Potential Source of Premium Pork Products",
+    "facultyResearchers": ["Arnolfo M. Monleon"],
+    "status": "Completed",
+    "duration": {
+      "startDate": "2021-05-10",
+      "completionDate": "2022-05-03"
+    },
+    "forum": {
+      "title": "89th General Membership Assembly of the National Research Council of the Philippines",
+      "venue": "Manila",
+      "type": "National",
+      "presentationDate": "2022-03-15"
+    },
+    "product": "Meat Quality Analysis",
+    "category": "Agriculture",
+    "keywords": ["Meat Quality", "Native Pig", "Agriculture"],
+    "fundingSource": "Research Grant",
+    "impactMetrics": {
+      "beneficiaries": 90,
+      "citations": 5
+    }
+  },
+  {
+    "_id": "16",
+    "researchTitle": "MSCCA Island and Archipelagic Studies: Transition from Studies Center to Creative Hub with CCP, KWF and NCCA",
+    "facultyResearchers": ["Randy T. Nobleza"],
+    "status": "Completed",
+    "duration": {
+      "startDate": "2021-10-15",
+      "completionDate": "2022-04-15"
+    },
+    "forum": {
+      "title": "4th SOSS Research Conference",
+      "venue": "Ateneo De Manila University",
+      "type": "Regional",
+      "presentationDate": "2022-04-18"
+    },
+    "product": "Creative Hub Development",
+    "category": "Cultural Studies",
+    "keywords": ["Island Studies", "Archipelagic Studies", "Cultural Hub"],
+    "fundingSource": "CCP, KWF, NCCA",
+    "impactMetrics": {
+      "beneficiaries": 110,
+      "citations": 6
+    }
+  },
+  {
+    "_id": "17",
+    "researchTitle": "Utilizing Surveillance, Trust, and Democracy as an Online Pedagogy Amidst Pandemic 2021",
+    "facultyResearchers": ["Lorimer L. Imperio"],
+    "status": "Completed",
+    "duration": {
+      "startDate": "2021-11-20",
+      "completionDate": "2022-03-20"
+    },
+    "forum": {
+      "title": "18th International Conference on Technology, Knowledge, and Society",
+      "venue": "National Changhua University of Education Taiwan, Province of China",
+      "type": "International",
+      "presentationDate": "2022-04-15"
+    },
+    "product": "Online Pedagogy Development",
+    "category": "Education Technology",
+    "keywords": ["Surveillance", "Trust", "Democracy"],
+    "fundingSource": "International Agency",
+    "impactMetrics": {
+      "beneficiaries": 130,
+      "citations": 10
+    }
+  },
+  {
+    "_id": "18",
+    "researchTitle": "Phytoremediation of Potential Toxic Elements by Native Tree Species in Mined-spoiled soils in Matraszentimre, Hungary",
+    "facultyResearchers": ["Jovito L. Opeña"],
+    "status": "Completed",
+    "duration": {
+      "startDate": "2022-01-30",
+      "completionDate": "2022-04-30"
+    },
+    "forum": {
+      "title": "6th International Symposium on Biosphere and Environmental Safety",
+      "venue": "Obuda University, Budapest, Hungary",
+      "type": "International",
+      "presentationDate": "2022-05-05"
+    },
+    "product": "Phytoremediation Study",
+    "category": "Environmental Science",
+    "keywords": ["Phytoremediation", "Toxic Elements", "Environmental Safety"],
+    "fundingSource": "International Agency",
+    "impactMetrics": {
+      "beneficiaries": 70,
+      "citations": 3
+    }
+  },
+  {
+    "_id": "19",
+    "researchTitle": "Semen Characterization of Markaduke Boars Improve Litter size production",
+    "facultyResearchers": ["Joeauna L. Loto", "Giselle M. Perlas"],
+    "status": "Completed",
+    "duration": {
+      "startDate": "2022-10-02",
+      "completionDate": "2022-10-05"
+    },
+    "forum": {
+      "title": "2nd International Research Conference in Sciences, Education, and Sports (IRCISES)",
+      "venue": "via Zoom",
+      "type": "International",
+      "presentationDate": "2022-05-21"
+    },
+    "product": "Semen Characterization Study",
+    "category": "Veterinary Science",
+    "keywords": ["Semen Characterization", "Markaduke Boars", "Litter Size"],
+    "fundingSource": "Research Grant",
+    "impactMetrics": {
+      "beneficiaries": 40,
+      "citations": 2
+    }
+  },
+  {
+    "_id": "20",
+    "researchTitle": "Will Economic Capability and Technological Availability Affect Graduate Competencies: An Exploratory Study of BSIT/BSIS Programs this Pandemic",
+    "facultyResearchers": ["Maria Nessa M. Solomon", "Ivy Joy N. Aguiflor"],
+    "status": "Completed",
+    "duration": {
+      "startDate": "2022-05-01",
+      "completionDate": "2022-05-05"
+    },
+    "forum": {
+      "title": "International Conference on Assessment in the New Normal (ICANN 2022)",
+      "venue": "Jose Rizal Memorial State University",
+      "type": "International",
+      "presentationDate": "2022-05-25"
+    },
+    "product": "Graduate Competencies Study",
+    "category": "Education",
+    "keywords": ["Graduate Competencies", "BSIT", "BSIS"],
+    "fundingSource": "School",
+    "impactMetrics": {
+      "beneficiaries": 90,
+      "citations": 5
+    }
+  },
+  {
+    "_id": "21",
+    "researchTitle": "Carps? Ready to Face it? The Information System Students’ Readiness for F2F Classes",
+    "facultyResearchers": ["Arben A. Ornedo"],
+    "status": "Completed",
+    "duration": {
+      "startDate": "2022-05-01",
+      "completionDate": "2022-05-05"
+    },
+    "forum": {
+      "title": "International Conference on Assessment in the New Normal (ICANN 2022)",
+      "venue": "Jose Rizal Memorial State University",
+      "type": "International",
+      "presentationDate": "2022-05-25"
+    },
+    "product": "Readiness Assessment Study",
+    "category": "Education",
+    "keywords": ["Readiness Assessment", "F2F Classes", "Information System"],
+    "fundingSource": "School",
+    "impactMetrics": {
+      "beneficiaries": 60,
+      "citations": 3
+    }
+  },
+  {
+    "_id": "22",
+    "researchTitle": "Adequacy of BS LEAD Criminalistics Laboratory: The Significance to Learning Modality and Conversion to BS Criminology",
+    "facultyResearchers": ["Jayceron L. Monteagudo", "Vergel L. Mayo"],
+    "status": "Completed",
+    "duration": {
+      "startDate": "2022-01-15",
+      "completionDate": "2022-05-15"
+    },
+    "forum": {
+      "title": "1st International Multidisciplinary Virtual Research Conference",
+      "venue": "1st International Multidisciplinary Virtual Research Conference",
+      "type": "International",
+      "presentationDate": "2022-06-24"
+    },
+    "product": "Laboratory Adequacy Study",
+    "category": "Criminalistics",
+    "keywords": [
+      "Criminalistics Laboratory",
+      "BS Criminology",
+      "Laboratory Adequacy"
     ],
-    "Status of Research": "Completed",
-    "Duration of Research": {
-      "Date Started": "Oct-16-22",
-      "Date of Completion": "Jan-15-23"
-    },
-    "Title of Forum": "PSU BIMP-EAGA International Research Conference",
-    "Venue": "City State Asturias Hotel, Puerto Princesa, Palawan",
-    "Forum Type": "International",
-    "Date of Presentation": "Feb-09-23",
-    "Product Name / Methods / Process / Technology": "E-salba for Disaster and Health Risk Reduction"
+    "fundingSource": "School",
+    "impactMetrics": {
+      "beneficiaries": 30,
+      "citations": 1
+    }
   },
   {
-    "Research Title": "Practices of the MSC ESL Teachers towards Online Assessment amidst the COVID-19 Pandemic",
-    "Name of Faculty Researcher / Author": ["Marieneth L. Malubag"],
-    "Status of Research": "Completed",
-    "Duration of Research": {
-      "Date Started": "1/11/2021",
-      "Date of Completion": "5/3/2022"
+    "_id": "23",
+    "researchTitle": "Factors Involved In The Contemporary Authenticity Of Tourist Industry In Marinduque Province",
+    "facultyResearchers": ["Merryrose Palma", "Angielyn D. Marquez"],
+    "status": "Completed",
+    "duration": {
+      "startDate": "2022-10-01",
+      "completionDate": "2022-10-06"
     },
-    "Title of Forum": "Linguistic Society of the Philippines International Conference 2022 & 21st English in Southeast Asia: A Joint Conference",
-    "Venue": "University of Sto. Tomas – via Zoom",
-    "Forum Type": "International",
-    "Date of Presentation": "March 10-12, 2022"
+    "forum": {
+      "title": "International Research Conference on Tourism and Hospitality Management",
+      "venue": "via Zoom",
+      "type": "International",
+      "presentationDate": "2022-06-10"
+    },
+    "product": "Tourist Industry Study",
+    "category": "Tourism",
+    "keywords": ["Tourist Industry", "Authenticity", "Marinduque"],
+    "fundingSource": "Local Government",
+    "impactMetrics": {
+      "beneficiaries": 80,
+      "citations": 4
+    }
   },
   {
-    "Research Title": "A Positioning Analysis on the Competing Roles of an ‘Academic’ ‘Mother’",
-    "Name of Faculty Researcher / Author": ["Jholey Rose L. Lancion"],
-    "Status of Research": "Completed",
-    "Duration of Research": {
-      "Date Started": "5/11/2021",
-      "Date of Completion": "5/3/2022"
+    "_id": "24",
+    "researchTitle": "An English Language Learners Perspective: Implementation of Flexible Blended Learning in an ESL Learning Context",
+    "facultyResearchers": ["Nikka Mae Adling"],
+    "status": "Completed",
+    "duration": {
+      "startDate": "2020-10-05",
+      "completionDate": "2021-01-05"
     },
-    "Title of Forum": "Linguistic Society of the Philippines International Conference 2022 & 21st English in Southeast Asia: A Joint Conference",
-    "Venue": "Practices of the MSC ESL Teachers towards Online Assessment amidst the COVID-19 Pandemic",
-    "Forum Type": "International",
-    "Date of Presentation": "March 10-12, 2022"
+    "forum": {
+      "title": "3rd DLSAU International Multidisciplinary Research Conference",
+      "venue": "De La Salle Araneta University via Microsoft Teams",
+      "type": "International",
+      "presentationDate": "2021-01-22"
+    },
+    "product": "Flexible Blended Learning Implementation",
+    "category": "Education",
+    "keywords": ["Flexible Blended Learning", "ESL Learning", "Education"],
+    "fundingSource": "School",
+    "impactMetrics": {
+      "beneficiaries": 100,
+      "citations": 5
+    }
   },
   {
-    "Research Title": "The Position of Marinduque Tagalog in the Linguistic Landscape of the Heritage Town of Boac, Marinduque",
-    "Name of Faculty Researcher / Author": ["Cherie Ann M. Luna"],
-    "Status of Research": "Completed",
-    "Duration of Research": {
-      "Date Started": "1/11/2021",
-      "Date of Completion": "5/3/2022"
+    "_id": "25",
+    "researchTitle": "Remote Flexible Blended Learning as an Instructional Modality for Physical Course amidst the COVID-19 Pandemic: A Phenomenological Study on the Experiences, Challenges Encountered and Suggestions of Students in a Public College",
+    "facultyResearchers": ["Bernice Jacob V. Garcia"],
+    "status": "Completed",
+    "duration": {
+      "startDate": "2020-09-15",
+      "completionDate": "2021-12-15"
     },
-    "Title of Forum": "Linguistic Society of the Philippines International Conference 2022 & 21st English in Southeast Asia: A Joint Conference",
-    "Venue": "University of Sto. Tomas – via Zoom",
-    "Forum Type": "International",
-    "Date of Presentation": "March 10-12, 2022"
+    "forum": {
+      "title": "3rd DLSAU International Multidisciplinary Research Conference",
+      "venue": "De La Salle Araneta University via Microsoft Teams",
+      "type": "International",
+      "presentationDate": "2021-01-22"
+    },
+    "product": "Remote Learning Study",
+    "category": "Education",
+    "keywords": ["Remote Learning", "COVID-19 Pandemic", "Education"],
+    "fundingSource": "School",
+    "impactMetrics": {
+      "beneficiaries": 120,
+      "citations": 6
+    }
   },
   {
-    "Research Title": "Meat Quality Markers Unveil the Markaduke Native Pig as Potential Source of Premium Pork Products",
-    "Name of Faculty Researcher / Author": ["Arnolfo M. Monleon"],
-    "Status of Research": "Completed",
-    "Duration of Research": {
-      "Date Started": "5/10/2021",
-      "Date of Completion": "5/3/2022"
+    "_id": "26",
+    "researchTitle": "Utilization of Kamansi Seeds",
+    "facultyResearchers": ["Rudolph L. Malinao"],
+    "status": "Completed",
+    "duration": {
+      "startDate": "2020-10-05",
+      "completionDate": "2021-01-05"
     },
-    "Title of Forum": "89th General Membership Assembly of the National Research Council of the Philippines",
-    "Venue": "Manila",
-    "Forum Type": "National",
-    "Date of Presentation": "March 15, 2022"
+    "forum": {
+      "title": "3rd DLSAU International Multidisciplinary Research Conference",
+      "venue": "De La Salle Araneta University via Microsoft Teams",
+      "type": "International",
+      "presentationDate": "2021-01-22"
+    },
+    "product": "Kamansi Seeds Utilization",
+    "category": "Agriculture",
+    "keywords": ["Kamansi Seeds", "Utilization", "Agriculture"],
+    "fundingSource": "School",
+    "impactMetrics": {
+      "beneficiaries": 50,
+      "citations": 2
+    }
   },
   {
-    "Research Title": "MSCCA Island and Archipelagic Studies: Transition from Studies Center to Creative Hub with CCP, KWF and NCCA",
-    "Name of Faculty Researcher / Author": ["Randy T. Nobleza"],
-    "Status of Research": "Completed",
-    "Duration of Research": {
-      "Date Started": "10/15/2021",
-      "Date of Completion": "4/15/2022"
+    "_id": "27",
+    "researchTitle": "Learning Under Lockdown: ELS Students’ Experiences, Challenges, and Suggestions on Remote Learning in the Rural Setting Amidst the COVID-19 Pandemic",
+    "facultyResearchers": ["Giannina Elaine M. Labicane"],
+    "status": "Completed",
+    "duration": {
+      "startDate": "2020-09-01",
+      "completionDate": "2021-01-01"
     },
-    "Title of Forum": "4th SOSS Research Conference",
-    "Venue": "Ateneo De Manila University",
-    "Forum Type": "Regional",
-    "Date of Presentation": "April 18-20, 2022"
+    "forum": {
+      "title": "3rd DLSAU International Multidisciplinary Research Conference",
+      "venue": "De La Salle Araneta University via Microsoft Teams",
+      "type": "International",
+      "presentationDate": "2021-01-22"
+    },
+    "product": "Remote Learning Experiences",
+    "category": "Education",
+    "keywords": ["Remote Learning", "COVID-19 Pandemic", "Education"],
+    "fundingSource": "School",
+    "impactMetrics": {
+      "beneficiaries": 110,
+      "citations": 5
+    }
   },
   {
-    "Research Title": "Utilizing Surveillance, Trust, and Democracy as an Online Pedagogy Amidst Pandemic 2021",
-    "Name of Faculty Researcher / Author": ["Lorimer L. Imperio"],
-    "Status of Research": "Completed",
-    "Duration of Research": {
-      "Date Started": "11/20/2021",
-      "Date of Completion": "3/20/2022"
+    "_id": "28",
+    "researchTitle": "E-Skwela in the Age of Pandemic: Perception of BA Communication Students in the Use of Virtual Classrooms for the Online Classes",
+    "facultyResearchers": ["Anna Roffel O. Lozada"],
+    "status": "Completed",
+    "duration": {
+      "startDate": "2020-09-15",
+      "completionDate": "2021-01-15"
     },
-    "Title of Forum": "18th International Conference on Technology, Knowledge, and Society",
-    "Venue": "National Changhua University of Education Taiwan, Province of China",
-    "Forum Type": "International",
-    "Date of Presentation": "April 15-16-, 2022"
+    "forum": {
+      "title": "3rd International Congress in Multidisciplinary Research",
+      "venue": "via Zoom Video Conference",
+      "type": "International",
+      "presentationDate": "2021-02-12"
+    },
+    "product": "Virtual Classrooms Perception",
+    "category": "Education",
+    "keywords": ["Virtual Classrooms", "Online Classes", "Education"],
+    "fundingSource": "School",
+    "impactMetrics": {
+      "beneficiaries": 90,
+      "citations": 4
+    }
   },
   {
-    "Research Title": "Phytoremediation of Potential Toxic Elements by Native Tree Species in Mined-spoiled soils in Matraszentimre, Hungary",
-    "Name of Faculty Researcher / Author": ["Jovito L. Opeña"],
-    "Status of Research": "Completed",
-    "Duration of Research": {
-      "Date Started": "1/30/2022",
-      "Date of Completion": "4/30/2022"
+    "_id": "29",
+    "researchTitle": "Response of Local Government Unit Towards Covid-19 Pandemic: A Study of Health Crisis Communication Management of Barangay Pili, Mogpog, Marinduque",
+    "facultyResearchers": ["Jerome Lingon"],
+    "status": "Completed",
+    "duration": {
+      "startDate": "2020-07-15",
+      "completionDate": "2020-12-15"
     },
-    "Title of Forum": "6th International Symposium on Biosphere and Environmental Safety",
-    "Venue": "Obuda University, Budapest, Hungary",
-    "Forum Type": "International",
-    "Date of Presentation": "May 5-6, 2022"
-  },
-  {
-    "Research Title": "Semen Characterization of Markaduke Boars Improve Litter size production",
-    "Name of Faculty Researcher / Author": [
-      "Joeauna L. Loto",
-      "Giselle M. Perlas"
+    "forum": {
+      "title": "3rd International Congress in Multidisciplinary Research",
+      "venue": "via Zoom Video Conference",
+      "type": "International",
+      "presentationDate": "2021-02-12"
+    },
+    "product": "Health Crisis Communication Study",
+    "category": "Public Health",
+    "keywords": [
+      "Covid-19 Pandemic",
+      "Health Crisis",
+      "Communication Management"
     ],
-    "Status of Research": "Completed",
-    "Duration of Research": {
-      "Date Started": "10/2/2022",
-      "Date of Completion": "10/5/2022"
-    },
-    "Title of Forum": "2nd International Research Conference in Sciences, Education, and Sports (IRCISES)",
-    "Venue": "via Zoom",
-    "Forum Type": "International",
-    "Date of Presentation": "May 21-23, 2022"
+    "fundingSource": "Local Government",
+    "impactMetrics": {
+      "beneficiaries": 100,
+      "citations": 5
+    }
   },
   {
-    "Research Title": "Will Economic Capability and Technological Availability Affect Graduate Competencies: An Exploratory Study of BSIT/BSIS Programs this Pandemic",
-    "Name of Faculty Researcher / Author": [
-      "Maria Nessa M. Solomon",
-      "Ivy Joy N. Aguiflor"
+    "_id": "30",
+    "researchTitle": "Success and Challenges of BSIT Students in Learning English in a Flexible Blended Learning Context",
+    "facultyResearchers": ["Nikka Mae Adling"],
+    "status": "Completed",
+    "duration": {
+      "startDate": "2020-09-15",
+      "completionDate": "2021-12-15"
+    },
+    "forum": {
+      "title": "3rd Linguistic Society of the Philippines International Conference 2021 (LSPIC 2021)",
+      "venue": "University of Sto. Tomas via Zoom",
+      "type": "International",
+      "presentationDate": "2021-03-11"
+    },
+    "product": "Learning English Study",
+    "category": "Education",
+    "keywords": [
+      "BSIT Students",
+      "Learning English",
+      "Flexible Blended Learning"
     ],
-    "Status of Research": "Completed",
-    "Duration of Research": {
-      "Date Started": "5/1/2022",
-      "Date of Completion": "5/5/2022"
-    },
-    "Title of Forum": "International Conference on Assessment in the New Normal (ICANN 2022)",
-    "Venue": "Jose Rizal Memorial State University",
-    "Forum Type": "International",
-    "Date of Presentation": "May 25-27, 2022"
+    "fundingSource": "School",
+    "impactMetrics": {
+      "beneficiaries": 80,
+      "citations": 4
+    }
   },
   {
-    "Research Title": "Carps? Ready to Face it? The Information System Students’ Readiness for F2F Classes",
-    "Name of Faculty Researcher / Author": ["Arben A. Ornedo"],
-    "Status of Research": "Completed",
-    "Duration of Research": {
-      "Date Started": "5/1/2022",
-      "Date of Completion": "5/5/2022"
+    "_id": "31",
+    "researchTitle": "Transitivity Analysis of Public Forum Responses of Candidates for SUC President in Marinduque State College",
+    "facultyResearchers": ["Cherie Ann M. Luna"],
+    "status": "Completed",
+    "duration": {
+      "startDate": "2020-12-01",
+      "completionDate": "2021-02-01"
     },
-    "Title of Forum": "International Conference on Assessment in the New Normal (ICANN 2022)",
-    "Venue": "Jose Rizal Memorial State University",
-    "Forum Type": "International",
-    "Date of Presentation": "May 25-27, 2022"
+    "forum": {
+      "title": "3rd Linguistic Society of the Philippines International Conference 2021 (LSPIC 2021)",
+      "venue": "University of Sto. Tomas via Zoom",
+      "type": "International",
+      "presentationDate": "2021-03-11"
+    },
+    "product": "Transitivity Analysis",
+    "category": "Linguistics",
+    "keywords": ["Transitivity Analysis", "Public Forum", "Linguistics"],
+    "fundingSource": "School",
+    "impactMetrics": {
+      "beneficiaries": 30,
+      "citations": 2
+    }
   },
   {
-    "Research Title": "Adequacy of BS LEAD Criminalistics Laboratory: The Significance to Learning Modality and Conversion to BS Criminology",
-    "Name of Faculty Researcher / Author": [
-      "Jayceron L. Monteagudo",
-      "Vergel L. Mayo"
+    "_id": "32",
+    "researchTitle": "Tanawing Pangwika: Isang Pag-aaral sa Kasiglahan ng Wika sa Poblasyon ng Summer Capital ng Marinduque",
+    "facultyResearchers": ["Marieneth L. Malubag"],
+    "status": "Completed",
+    "duration": {
+      "startDate": "2020-01-15",
+      "completionDate": "2020-06-15"
+    },
+    "forum": {
+      "title": "3rd Linguistic Society of the Philippines International Conference 2021 (LSPIC 2021)",
+      "venue": "University of Sto. Tomas via Zoom",
+      "type": "International",
+      "presentationDate": "2021-03-11"
+    },
+    "product": "Language Vitality Study",
+    "category": "Linguistics",
+    "keywords": ["Language Vitality", "Linguistic Landscape", "Marinduque"],
+    "fundingSource": "School",
+    "impactMetrics": {
+      "beneficiaries": 40,
+      "citations": 2
+    }
+  },
+  {
+    "_id": "33",
+    "researchTitle": "Perception of ELS Students on the Use of Open Education Resources (OER) for Remote Learning",
+    "facultyResearchers": ["Giannina Elaine M. Labicane"],
+    "status": "Completed",
+    "duration": {
+      "startDate": "2020-10-01",
+      "completionDate": "2021-01-15"
+    },
+    "forum": {
+      "title": "3rd Linguistic Society of the Philippines International Conference 2021 (LSPIC 2021)",
+      "venue": "University of Sto. Tomas via Zoom",
+      "type": "International",
+      "presentationDate": "2021-03-11"
+    },
+    "product": "Open Education Resources Study",
+    "category": "Education",
+    "keywords": ["Open Education Resources", "Remote Learning", "Education"],
+    "fundingSource": "School",
+    "impactMetrics": {
+      "beneficiaries": 70,
+      "citations": 3
+    }
+  },
+  {
+    "_id": "34",
+    "researchTitle": "Development and Validation of Technology-Enhanced Module for Teaching Oral Communication in Context",
+    "facultyResearchers": ["Cristina S. Atienza"],
+    "status": "Completed",
+    "duration": {
+      "startDate": "2020-10-15",
+      "completionDate": "2021-02-15"
+    },
+    "forum": {
+      "title": "3rd Linguistic Society of the Philippines International Conference 2021 (LSPIC 2021)",
+      "venue": "University of Sto. Tomas via Zoom",
+      "type": "International",
+      "presentationDate": "2021-03-11"
+    },
+    "product": "Technology-Enhanced Module Development",
+    "category": "Education Technology",
+    "keywords": [
+      "Technology-Enhanced Module",
+      "Oral Communication",
+      "Education"
     ],
-    "Status of Research": "Completed",
-    "Duration of Research": {
-      "Date Started": "1/15/2022",
-      "Date of Completion": "5/15/2022"
-    },
-    "Title of Forum": "1st International Multidisciplinary Virtual Research Conference",
-    "Venue": "1st International Multidisciplinary Virtual Research Conference",
-    "Forum Type": "International",
-    "Date of Presentation": "June 24-26, 2022"
+    "fundingSource": "School",
+    "impactMetrics": {
+      "beneficiaries": 50,
+      "citations": 2
+    }
   },
   {
-    "Research Title": "Factors Involved In The Contemporary Authenticity Of Tourist Industry In Marinduque Province",
-    "Name of Faculty Researcher / Author": [
-      "Merryrose Palma",
-      "Angielyn D. Marquez"
-    ],
-    "Status of Research": "Completed",
-    "Duration of Research": {
-      "Date Started": "10/1/2022",
-      "Date of Completion": "10/6/2022"
-    },
-    "Title of Forum": "International Research Conference on Tourism and Hospitality Management",
-    "Venue": "via Zoom",
-    "Forum Type": "International",
-    "Date of Presentation": "June 10-11, 2022"
-  },
-
-  {
-    "Research Title": "An English Language Learners Perspective: Implementation of Flexible Blended Learning in an ESL Learning Context",
-    "Name of Faculty Researcher / Author": ["Nikka Mae Adling"],
-    "Status of Research": "Completed",
-    "Duration of Research": {
-      "Date Started": "10/5/2020",
-      "Date of Completion": "1/5/2021"
-    },
-    "Title of Forum": "3rd DLSAU International Multidisciplinary Research Conference",
-    "Venue": "De La Salle Araneta University via Microsoft Teams",
-    "Forum Type": "International",
-    "Date of Presentation": "January 22-23, 2021"
-  },
-  {
-    "Research Title": "Remote Flexible Blended Learning as an Instructional Modality for Physical Course amidst the COVID-19 Pandemic: A Phenomenological Study on the Experiences, Challenges Encountered and Suggestions of Students in a Public College",
-    "Name of Faculty Researcher / Author": ["Bernice Jacob V. Garcia"],
-    "Status of Research": "Completed",
-    "Duration of Research": {
-      "Date Started": "9/15/2020",
-      "Date of Completion": "12/15/2021"
-    },
-    "Title of Forum": "3rd DLSAU International Multidisciplinary Research Conference",
-    "Venue": "De La Salle Araneta University via Microsoft Teams",
-    "Forum Type": "International",
-    "Date of Presentation": "January 22-23, 2021"
-  },
-  {
-    "Research Title": "Utilization of Kamansi Seeds",
-    "Name of Faculty Researcher / Author": ["Rudolph L. Malinao"],
-    "Status of Research": "Completed",
-    "Duration of Research": {
-      "Date Started": "10/5/2020",
-      "Date of Completion": "1/5/2021"
-    },
-    "Title of Forum": "3rd DLSAU International Multidisciplinary Research Conference",
-    "Venue": "De La Salle Araneta University via Microsoft Teams",
-    "Forum Type": "International",
-    "Date of Presentation": "January 22-23, 2021"
-  },
-  {
-    "Research Title": "Learning Under Lockdown: ELS Students’ Experiences, Challenges, and Suggestions on Remote Learning in the Rural Setting Amidst the COVID-19 Pandemic",
-    "Name of Faculty Researcher / Author": ["Giannina Elaine M. Labicane"],
-    "Status of Research": "Completed",
-    "Duration of Research": {
-      "Date Started": "9/1/2020",
-      "Date of Completion": "1/1/2021"
-    },
-    "Title of Forum": "3rd DLSAU International Multidisciplinary Research Conference",
-    "Venue": "De La Salle Araneta University via Microsoft Teams",
-    "Forum Type": "International",
-    "Date of Presentation": "January 22-23, 2021"
-  },
-  {
-    "Research Title": "E-Skwela in the Age of Pandemic: Perception of BA Communication Students in the Use of Virtual Classrooms for the Online Classes",
-    "Name of Faculty Researcher / Author": ["Anna Roffel O. Lozada"],
-    "Status of Research": "Completed",
-    "Duration of Research": {
-      "Date Started": "9/15/2020",
-      "Date of Completion": "1/15/2021"
-    },
-    "Title of Forum": "3rd International Congress in Multidisciplinary Research",
-    "Venue": "via Zoom Video Conference",
-    "Forum Type": "International",
-    "Date of Presentation": "February 12-14, 2021"
-  },
-  {
-    "Research Title": "Response of Local Government Unit Towards Covid-19 Pandemic: A Study of Health Crisis Communication Management of Barangay Pili, Mogpog, Marinduque",
-    "Name of Faculty Researcher / Author": ["Jerome Lingon"],
-    "Status of Research": "Completed",
-    "Duration of Research": {
-      "Date Started": "7/15/2020",
-      "Date of Completion": "12/15/2020"
-    },
-    "Title of Forum": "3rd International Congress in Multidisciplinary Research",
-    "Venue": "via Zoom Video Conference",
-    "Forum Type": "International",
-    "Date of Presentation": "February 12-14, 2021"
-  },
-  {
-    "Research Title": "Success and Challenges of BSIT Students in Learning English in a Flexible Blended Learning Context",
-    "Name of Faculty Researcher / Author": ["Nikka Mae Adling"],
-    "Status of Research": "Completed",
-    "Duration of Research": {
-      "Date Started": "9/15/2020",
-      "Date of Completion": "12/15/2021"
-    },
-    "Title of Forum": "3rd Linguistic Society of the Philippines International Conference 2021 (LSPIC 2021)",
-    "Venue": "University of Sto. Tomas via Zoom",
-    "Forum Type": "International",
-    "Date of Presentation": "March 11-13, 2021"
-  },
-  {
-    "Research Title": "Transitivity Analysis of Public Forum Responses of Candidates for SUC President in Marinduque State College",
-    "Name of Faculty Researcher / Author": ["Cherie Ann M. Luna"],
-    "Status of Research": "Completed",
-    "Duration of Research": {
-      "Date Started": "12/1/2020",
-      "Date of Completion": "2/1/2021"
-    },
-    "Title of Forum": "3rd Linguistic Society of the Philippines International Conference 2021 (LSPIC 2021)",
-    "Venue": "University of Sto. Tomas via Zoom",
-    "Forum Type": "International",
-    "Date of Presentation": "March 11-13, 2021"
-  },
-  {
-    "Research Title": "Tanawing Pangwika: Isang Pag-aaral sa Kasiglahan ng Wika sa Poblasyon ng Summer Capital ng Marinduque",
-    "Name of Faculty Researcher / Author": ["Marieneth L. Malubag"],
-    "Status of Research": "Completed",
-    "Duration of Research": {
-      "Date Started": "1/15/2020",
-      "Date of Completion": "6/15/2020"
-    },
-    "Title of Forum": "3rd Linguistic Society of the Philippines International Conference 2021 (LSPIC 2021)",
-    "Venue": "University of Sto. Tomas via Zoom",
-    "Forum Type": "International",
-    "Date of Presentation": "March 11-13, 2021"
-  },
-  {
-    "Research Title": "Perception of ELS Students on the Use of Open Education Resources (OER) for Remote Learning",
-    "Name of Faculty Researcher / Author": ["Giannina Elaine M. Labicane"],
-    "Status of Research": "Completed",
-    "Duration of Research": {
-      "Date Started": "10/1/2020",
-      "Date of Completion": "1/15/2021"
-    },
-    "Title of Forum": "3rd Linguistic Society of the Philippines International Conference 2021 (LSPIC 2021)",
-    "Venue": "University of Sto. Tomas via Zoom",
-    "Forum Type": "International",
-    "Date of Presentation": "March 11-13, 2021"
-  },
-  {
-    "Research Title": "Development and Validation of Technology-Enhanced Module for Teaching Oral Communication in Context",
-    "Name of Faculty Researcher / Author": ["Cristina S. Atienza"],
-    "Status of Research": "Completed",
-    "Duration of Research": {
-      "Date Started": "10/15/2020",
-      "Date of Completion": "2/15/2021"
-    },
-    "Title of Forum": "3rd Linguistic Society of the Philippines International Conference 2021 (LSPIC 2021)",
-    "Venue": "University of Sto. Tomas via Zoom",
-    "Forum Type": "International",
-    "Date of Presentation": "March 11-13, 2021"
-  },
-  {
-    "Research Title": "Enhancement, Restoration, and Protection of Nipa Stands in Marinduque",
-    "Name of Faculty Researcher / Author": [
+    "_id": "35",
+    "researchTitle": "Enhancement, Restoration, and Protection of Nipa Stands in Marinduque",
+    "facultyResearchers": [
       "Doreen R. Mascareñas",
       "Wilson R. Paez",
       "Reyalyn V. Malapad",
       "Harvey A. Dulay",
       "Desiree Anne Sto.Domingo"
     ],
-    "Status of Research": "Ongoing",
-    "Duration of Research": {
-      "Date Started": "1/25/2022",
-      "Date of Completion": "N/A"
+    "status": "Ongoing",
+    "duration": {
+      "startDate": "2022-01-25",
+      "completionDate": "N/A"
     },
-    "Title of Forum": "Philippine Council for Agriculture, Aquatic and Natural Resources Research and Development (PCAARRD) National Conference",
-    "Venue": "Sulo Riviera Hotel, Quezon City",
-    "Forum Type": "National",
-    "Date of Presentation": "August 22-23, 2024"
+    "forum": {
+      "title": "Philippine Council for Agriculture, Aquatic and Natural Resources Research and Development (PCAARRD) National Conference",
+      "venue": "Sulo Riviera Hotel, Quezon City",
+      "type": "National",
+      "presentationDate": "2024-08-22"
+    },
+    "product": "Nipa Stands Conservation",
+    "category": "Environmental Science",
+    "keywords": ["Nipa Stands", "Conservation", "Marinduque"],
+    "fundingSource": "PCAARRD",
+    "impactMetrics": {
+      "beneficiaries": 200,
+      "citations": 15
+    }
   }
 ]

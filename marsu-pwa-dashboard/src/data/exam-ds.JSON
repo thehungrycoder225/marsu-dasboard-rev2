@@ -1,58 +1,102 @@
 [
   {
-    "branch_id": 1,
-    "branch_name": "Boac",
+    "_id": 1,
+    "branchName": "Boac",
     "year": 2023,
     "categories": [
-      "Nursing",
-      "Social Work",
-      "Electrical Engineering",
-      "Electronics Engineering",
-      "Civil Engineering",
-      "Mechanical Engineering",
-      "Secondary Education",
-      "Elementary Education"
-    ],
-    "series": [
       {
-        "name": "First Time Takers",
-        "data": [90, 52, 26, 18, 119, 16, 101, 23]
+        "categoryName": "Nursing",
+        "firstTimeTakers": 90,
+        "passingRate": 86,
+        "totalExaminees": 100,
+        "topPerformers": ["John Doe", "Jane Smith"],
+        "remarks": "Exceeded National Average"
       },
       {
-        "name": "Passing Rate",
-        "data": [86, 37, 20, 5, 57, 15, 86, 23]
+        "categoryName": "Social Work",
+        "firstTimeTakers": 52,
+        "passingRate": 37,
+        "totalExaminees": 60,
+        "topPerformers": ["Alice Brown"],
+        "remarks": "Met National Average"
+      },
+      {
+        "categoryName": "Electrical Engineering",
+        "firstTimeTakers": 26,
+        "passingRate": 20,
+        "totalExaminees": 30,
+        "topPerformers": [],
+        "remarks": "Below National Average"
+      },
+      {
+        "categoryName": "Electronics Engineering",
+        "firstTimeTakers": 18,
+        "passingRate": 5,
+        "totalExaminees": 20,
+        "topPerformers": [],
+        "remarks": "Needs Improvement"
+      },
+      {
+        "categoryName": "Civil Engineering",
+        "firstTimeTakers": 119,
+        "passingRate": 57,
+        "totalExaminees": 130,
+        "topPerformers": ["Michael Green"],
+        "remarks": "Good Performance"
+      },
+      {
+        "categoryName": "Mechanical Engineering",
+        "firstTimeTakers": 16,
+        "passingRate": 15,
+        "totalExaminees": 18,
+        "topPerformers": [],
+        "remarks": "Met Expectations"
+      },
+      {
+        "categoryName": "Secondary Education",
+        "firstTimeTakers": 101,
+        "passingRate": 86,
+        "totalExaminees": 110,
+        "topPerformers": ["Sarah White"],
+        "remarks": "Excellent Performance"
+      },
+      {
+        "categoryName": "Elementary Education",
+        "firstTimeTakers": 23,
+        "passingRate": 23,
+        "totalExaminees": 25,
+        "topPerformers": [],
+        "remarks": "Satisfactory"
       }
     ]
   },
   {
-    "branch_id": 2,
-    "branch_name": "Gasan",
+    "_id": 2,
+    "branchName": "Gasan",
     "year": 2023,
-    "categories": ["Fisheries"],
-    "series": [
+    "categories": [
       {
-        "name": "First Time Takers",
-        "data": [7]
-      },
-      {
-        "name": "Passing Rate",
-        "data": [4]
+        "categoryName": "Fisheries",
+        "firstTimeTakers": 7,
+        "passingRate": 4,
+        "totalExaminees": 8,
+        "topPerformers": [],
+        "remarks": "Needs Improvement"
       }
     ]
   },
   {
-    "branch_id": 4,
-    "branch_name": "Torrijos",
+    "_id": 3,
+    "branchName": "Torrijos",
     "year": 2023,
-    "categories": ["Agriculture"],
-    "series": [
+    "categories": [
       {
-        "name": "First Time Takers",
-        "data": [16]
-      },
-      {
-        "name": "Passing Rate",
-        "data": [11]
+        "categoryName": "Agriculture",
+        "firstTimeTakers": 16,
+        "passingRate": 11,
+        "totalExaminees": 18,
+        "topPerformers": ["David Black"],
+        "remarks": "Good Performance"
       }
     ]
   }
