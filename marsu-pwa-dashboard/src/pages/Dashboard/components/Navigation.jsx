@@ -6,7 +6,7 @@ import {
 } from '@heroicons/react/20/solid';
 
 const tabs = [
-  { name: 'Overview', href: '/', icon: ChartPieIcon },
+  { name: 'Overview', href: '/dashboard', icon: ChartPieIcon },
   { name: 'Academics', href: '/academics', icon: BuildingOfficeIcon },
   { name: 'Researches', href: '/researches', icon: UsersIcon },
 ];
