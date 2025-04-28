@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Navigation from './components/Navigation';
 import DashboardHeader from './components/DashboardHeader';
 import CardWidget from './components/Widgets';
-import Charts from './components/Charts';
 import Chart from 'react-apexcharts';
 import {
   useEnrollmentChartData,
@@ -46,7 +45,7 @@ function Dashboard() {
 
       <div className='px-4 py-8 mx-auto max-w-7xl sm:px-6 lg:px-8'>
         <div className='mb-4 flex justify-between'>
-          <div>
+          {/* <div>
             <label className='mr-2'>Year:</label>
             <select
               value={filters.year}
@@ -71,9 +70,9 @@ function Dashboard() {
               <option value='Torrijos'>Torrijos</option>
               <option value='Sta. Cruz'>Sta. Cruz</option>
             </select>
-          </div>
+          </div> */}
 
-          <div>
+          {/* <div>
             <button
               className='bg-rose-900 hover:bg-rose-700 text-white px-4 py-2 rounded mr-2'
               onClick={() => handleExport('csv')}
@@ -86,7 +85,7 @@ function Dashboard() {
             >
               Export JSON
             </button>
-          </div>
+          </div> */}
         </div>
 
         <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
