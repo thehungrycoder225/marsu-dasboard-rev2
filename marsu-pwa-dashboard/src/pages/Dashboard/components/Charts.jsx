@@ -3,6 +3,7 @@ import Chart from 'react-apexcharts';
 import {
   useEnrollmentChartData,
   useChartOptions,
+  useEnrollmentData,
 } from '../../../hooks/dataHooks';
 
 export default function Charts() {
@@ -13,6 +14,7 @@ export default function Charts() {
 
   const enrollmentChartData = useEnrollmentChartData(filters);
   const chartOptions = useChartOptions;
+  const enrollmentData = useEnrollmentData();
 
   return (
     <div className='w-full'>

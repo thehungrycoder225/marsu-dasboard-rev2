@@ -1,34 +1,69 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import Navigation from './components/Navigation';
 import DashboardHeader from './components/DashboardHeader';
 import CardWidget from './components/Widgets';
+import SummarySection from './components/Summary';
 import Chart from 'react-apexcharts';
-import {
-  useEnrollmentChartData,
-  useLicensureExamData,
-  useChartOptions,
-} from '../../hooks/dataHooks';
 
 function Dashboard() {
   const [filters, setFilters] = useState({
     year: new Date().getFullYear(),
     branch: null,
   });
+  const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
-  const chartData = useEnrollmentChartData(filters);
-  const chartOptions = useChartOptions(chartData);
+  const [error, setError] = useState(null);
 
-  const handleExport = (type) => {
-    // const dataToExport = JSON.stringify(chartData, null, 2);
-    // const blob = new Blob([dataToExport], { type: 'application/json' });
-    // saveAs(blob, `dashboard-data.${type}`);
-  };
+  useEffect(() => {
+    setLoading(true);
+    fetch('/enrollments_processed.json')
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error(`HTTP error! status: ${res.status}`);
+        }
+        return res.json();
+      })
+      .then((json) => setData(json))
+      .catch((error) => setError(error.message))
+      .finally(() => setLoading(false));
+  }, []);
+
+  console.log('Data fetched:', data);
+  // const getBubbleData = useMemo(() => {
+  //   if (!data) return [];
+  //   const entry = data.find((d) => d.year === filters.year);
+  //   if (!entry) return [];
+
+  //   return entry.programs.map((program) => ({
+  //     x: program.enrollment,
+  //     y: program.growth_rate ? Math.round(program.growth_rate * 100) : 0,
+  //     z: program.rank,
+  //     name: program.name.replace('Bachelor of Science in ', ''),
+  //     category: program.category,
+  //   }));
+  // }, [data, filters.year]);
+
+  // const handleExport = (type) => {
+  //   if (!data) return;
+  //   const dataToExport = JSON.stringify(data, null, 2);
+  //   const blob = new Blob([dataToExport], { type: `application/${type}` });
+  //   const url = URL.createObjectURL(blob);
+  //   const link = document.createElement('a');
+  //   link.href = url;
+  //   link.download = `dashboard-data.${type}`;
+  //   link.click();
+  //   URL.revokeObjectURL(url);
+  // };
 
   if (loading) {
     return <div className='text-center'>Loading...</div>;
   }
 
-  if (!chartData) {
+  if (error) {
+    return <div className='text-center text-red-500'>Error: {error}</div>;
+  }
+
+  if (!data || data.length === 0) {
     return (
       <div className='text-center text-red-500'>
         No data available for the selected filters.
@@ -72,8 +107,8 @@ function Dashboard() {
             </select>
           </div> */}
 
-          {/* <div>
-            <button
+          <div>
+            {/* <button
               className='bg-rose-900 hover:bg-rose-700 text-white px-4 py-2 rounded mr-2'
               onClick={() => handleExport('csv')}
             >
@@ -84,38 +119,27 @@ function Dashboard() {
               onClick={() => handleExport('json')}
             >
               Export JSON
-            </button>
-          </div> */}
+            </button> */}
+          </div>
         </div>
 
         <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
           <div className='mx-auto max-w-2xl lg:mx-0 lg:max-w-none'>
             <div className='flex items-center justify-between'>
               <h2 className='text-2xl/2 font-bold leading-7'>
-                Enrollment Statistics
+                University Enrollment Statistics
               </h2>
             </div>
-            <CardWidget />
           </div>
 
           <div className='mx-auto max-w-2xl lg:mx-0 lg:max-w-none'>
-            <h2 className='text-md font-bold mb-4'>Overview</h2>
             <div className='w-full'>
-              <Chart
-                options={chartOptions}
-                series={chartData.series}
-                type='bar'
-                height={350}
-              />
+              <div className='summary-cards'>
+                <div className='summary-card'>
+                  <SummarySection data={data} />
+                </div>
+              </div>
             </div>
-
-            {/* Closing div for w-full */}
-          </div>
-
-          <div className='mt-6 grid grid-cols-1 gap-x-6 gap-y-8 lg:grid-cols-2 xl:gap-x-8'></div>
-
-          <div className='mx-auto max-w-2xl lg:mx-0 lg:max-w-none'>
-            <h2>Licensure Exams Performance Statistics</h2>
           </div>
         </div>
       </div>
