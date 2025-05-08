@@ -11,7 +11,7 @@ import {
 
 function Dashboard() {
   const [filters, setFilters] = useState({
-    year: Date.now().getFullYear(),
+    year: new Date().getFullYear(),
     branch: null,
   });
   const [loading, setLoading] = useState(false);
