@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Navigation from './components/Navigation';
 import DashboardHeader from './components/DashboardHeader';
 import SummarySection from './components/Summary';
+import ResearchSummary from './components/ResearchSummary';
 
 function Dashboard() {
   const [filters, setFilters] = useState({
@@ -36,6 +37,12 @@ function Dashboard() {
     fetchData('/research.json', setResearchData);
   }, []);
 
+  console.log({
+    enrollments_processed: data,
+    board_exams: boardExamData,
+    research: researchData,
+  });
+
   if (loading) {
     return <div className='text-center'>Loading...</div>;
   }
@@ -67,8 +74,8 @@ function Dashboard() {
         <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
           <div className='mx-auto max-w-2xl lg:mx-0 lg:max-w-none'>
             <div className='flex items-center justify-between'>
-              <h2 className='text-2xl/2 font-bold leading-7'>
-                University Enrollment Statistics
+              <h2 className='text-lg font-semibold leading-6 text-gray-900'>
+                Enrollment Performance Summary
               </h2>
             </div>
           </div>
@@ -80,6 +87,27 @@ function Dashboard() {
                   <SummarySection data={data} />
                 </div>
                 <div className='summary-card'></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
+          <div className='mx-auto max-w-2xl lg:mx-0 lg:max-w-none'>
+            <div className='flex items-center justify-between'></div>
+          </div>
+
+          <div className='mx-auto max-w-2xl lg:mx-0 lg:max-w-none'>
+            <div className='w-full'>
+              <div className='summary-cards'>
+                <ResearchSummary
+                  data={researchData}
+                  filteredData={
+                    researchData?.research_data?.filter(
+                      (item) => item.year === filters.year
+                    ) || []
+                  }
+                />
               </div>
             </div>
           </div>
