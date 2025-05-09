@@ -73,5 +73,10 @@ def generate_summary(df):
 processed_data = generate_summary(df)
 with open('boardexam_processed.json', 'w') as f:
     json.dump(processed_data, f, indent=2)
+    
+# Save Cleaned DataFrame to CSV for further analysis
+df.to_csv('boardexam_cleaned.csv', index=False)
+# Save summary statistics to CSV for reporting
+
 
 print("Data preprocessing complete. Output saved to boardexam_processed.json")

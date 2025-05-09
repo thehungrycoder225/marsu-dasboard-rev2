@@ -64,7 +64,7 @@ const SummarySection = ({ data }) => {
         <div className='overflow-hidden rounded-xl border border-gray-200'>
           <div className='flex items-center gap-x-4 border-b border-gray-900/5 bg-gray-50 p-4'>
             <h3 className='text-sm font-medium leading-6 text-gray-900'>
-              5-Year Trend
+              Year-over-Year Trend
             </h3>
           </div>
           <div className='px-6 py-4'>
@@ -72,7 +72,7 @@ const SummarySection = ({ data }) => {
               options={{
                 chart: { sparkline: { enabled: true } },
                 stroke: { curve: 'smooth', width: 3 },
-                colors: ['#3B82F6'],
+                colors: ['#660033'],
                 tooltip: { enabled: false },
               }}
               series={[
@@ -83,7 +83,6 @@ const SummarySection = ({ data }) => {
               ]}
               type='line'
               height={100}
-              width={200}
             />
             <div className='mt-2 flex justify-between text-xs text-gray-500'>
               {trends.map((t) => (

@@ -24,3 +24,14 @@ dev-dist
 *.sln
 *.sw?
 
+
+# ignore myVenv
+
+myVenv
+# ignore .env files
+.env
+.env.*.local
+.env.*.local
+.env.*.local
+.env.*.local
+
