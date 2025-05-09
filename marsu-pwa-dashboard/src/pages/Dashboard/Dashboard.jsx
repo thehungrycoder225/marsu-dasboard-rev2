@@ -3,6 +3,7 @@ import Navigation from './components/Navigation';
 import DashboardHeader from './components/DashboardHeader';
 import SummarySection from './components/Summary';
 import ResearchSummary from './components/ResearchSummary';
+import BoardExamSummary from './components/BoardExamSummary';
 
 function Dashboard() {
   const [filters, setFilters] = useState({
@@ -86,17 +87,15 @@ function Dashboard() {
                 <div className='summary-card'>
                   <SummarySection data={data} />
                 </div>
-                <div className='summary-card'></div>
+                <div className='summary-card'>
+                  <BoardExamSummary data={boardExamData} filters={filters} />
+                </div>
               </div>
             </div>
           </div>
         </div>
 
         <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
-          <div className='mx-auto max-w-2xl lg:mx-0 lg:max-w-none'>
-            <div className='flex items-center justify-between'></div>
-          </div>
-
           <div className='mx-auto max-w-2xl lg:mx-0 lg:max-w-none'>
             <div className='w-full'>
               <div className='summary-cards'>

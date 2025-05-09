@@ -1,26 +1,15 @@
 import { useState } from 'react';
 import ApexCharts from 'react-apexcharts';
 import PropTypes from 'prop-types';
-import {
-  Menu,
-  MenuButton,
-  MenuItem,
-  MenuItems,
-  Transition,
-} from '@headlessui/react';
-import { EllipsisHorizontalIcon } from '@heroicons/react/24/outline';
-import { Fragment } from 'react';
 
 const ResearchSummary = ({ data, filteredData }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 5;
 
+  const { summary } = data;
   const latestYear = Math.max(
-    ...(data.summary.by_year
-      ? Object.keys(data.summary.by_year).map(Number)
-      : [])
+    ...Object.keys(summary.by_year || {}).map(Number)
   );
-  const summary = data.summary;
 
   const currentYearStats = {
     total: filteredData.length,
@@ -36,19 +25,20 @@ const ResearchSummary = ({ data, filteredData }) => {
     summary.top_researchers || {}
   ).slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
 
-  const handleNextPage = () => {
-    if (
-      currentPage * itemsPerPage <
-      Object.entries(summary.top_researchers || {}).length
-    ) {
-      setCurrentPage(currentPage + 1);
-    }
-  };
-
-  const handlePreviousPage = () => {
-    if (currentPage > 1) {
-      setCurrentPage(currentPage - 1);
-    }
+  const handlePageChange = (direction) => {
+    setCurrentPage((prevPage) => {
+      const newPage = prevPage + direction;
+      if (
+        newPage < 1 ||
+        newPage >
+          Math.ceil(
+            Object.entries(summary.top_researchers || {}).length / itemsPerPage
+          )
+      ) {
+        return prevPage;
+      }
+      return newPage;
+    });
   };
 
   return (
@@ -116,7 +106,7 @@ const ResearchSummary = ({ data, filteredData }) => {
                 chart: { sparkline: { enabled: true } },
                 stroke: { curve: 'smooth', width: 2 },
                 colors: ['#660033'],
-                tooltip: { enabled: true },
+                tooltip: { enabled: false },
               }}
               series={[
                 {
@@ -158,14 +148,14 @@ const ResearchSummary = ({ data, filteredData }) => {
             </table>
             <div className='mt-4 flex justify-between'>
               <button
-                onClick={handlePreviousPage}
+                onClick={() => handlePageChange(-1)}
                 disabled={currentPage === 1}
                 className='text-sm text-gray-500 hover:text-gray-700'
               >
                 Previous
               </button>
               <button
-                onClick={handleNextPage}
+                onClick={() => handlePageChange(1)}
                 disabled={
                   currentPage * itemsPerPage >=
                   Object.entries(summary.top_researchers || {}).length
